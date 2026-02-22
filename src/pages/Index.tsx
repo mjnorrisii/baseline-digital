@@ -103,7 +103,34 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Problems */}
+      {/* Built From Real Operations */}
+      <section className="border-b border-border py-20">
+        <div className="container">
+          <SectionHeading
+            label="Built from real operations"
+            title="Designed for how businesses actually run"
+          />
+          <div className="grid gap-6 md:grid-cols-2">
+            <motion.div {...fadeUp}>
+              <p className="text-sm leading-relaxed text-muted-foreground">
+                Most automation fails because it is designed for ideal conditions. Clean data, predictable inputs, staff who follow every step exactly as documented. That is not how real businesses operate.
+              </p>
+              <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+                Baseline Digital builds systems around the conditions that actually exist inside service businesses: incomplete information, inconsistent handoffs, human error, unexpected volume changes, and processes that depend entirely on one person's availability.
+              </p>
+            </motion.div>
+            <motion.div {...fadeUp} transition={{ duration: 0.5, delay: 0.1 }}>
+              <p className="text-sm leading-relaxed text-muted-foreground">
+                Every workflow we build accounts for failure states. What happens when a form is submitted with missing fields. What happens when a payment fails. What happens when a staff member does not complete their step. These are not edge cases. They are the norm.
+              </p>
+              <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+                The difference between a system that works in a demo and one that works in production is whether it was designed to handle real operational pressure. That is what we deliver.
+              </p>
+            </motion.div>
+          </div>
+        </div>
+      </section>
+
       <section className="border-b border-border py-20">
         <div className="container">
           <SectionHeading
