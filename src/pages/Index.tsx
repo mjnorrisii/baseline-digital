@@ -37,14 +37,14 @@ const Index = () => {
             transition={{ duration: 0.7 }}
             className="max-w-3xl"
           >
-            <p className="mb-4 text-xs font-medium uppercase tracking-widest text-primary">
-              Operations Automation
-            </p>
             <h1 className="font-heading text-4xl font-bold leading-tight tracking-tight md:text-6xl">
-              Replace manual work with systems that run without you
+              Your operations are losing you money every week
             </h1>
-            <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted-foreground">
-              We build the operational infrastructure that captures leads, qualifies them, triggers payment, and delivers your service — automatically. No more lost revenue from broken processes.
+            <p className="mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground">
+              Leads go untracked. Follow-ups get missed. Staff copy data between tools by hand. When a key person is unavailable, the process stops. Every one of these failures costs revenue — silently, repeatedly, and at scale.
+            </p>
+            <p className="mt-4 max-w-2xl text-base leading-relaxed text-foreground">
+              Baseline Digital installs structured automation systems that eliminate these losses. Defined workflows replace manual steps so your operations execute consistently, without depending on any single person or memory.
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
               <Link
@@ -55,10 +55,10 @@ const Index = () => {
                 <ArrowRight size={16} />
               </Link>
               <Link
-                to="/process"
+                to="/how-it-works"
                 className="inline-flex items-center gap-2 rounded-md border border-border px-6 py-3 text-sm font-medium text-foreground transition-colors hover:bg-secondary"
               >
-                See Process
+                See How It Works
               </Link>
             </div>
           </motion.div>
