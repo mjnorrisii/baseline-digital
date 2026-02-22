@@ -70,29 +70,33 @@ const Index = () => {
         <div className="container">
           <SectionHeading
             label="Who this is for"
-            title="Built for businesses with real operational volume"
+            title="We work with a specific type of business"
+            description="This section exists to save your time and ours. If your situation matches the left column, a strategy call will be productive. If it matches the right column, we are not the right fit."
           />
           <div className="grid gap-6 md:grid-cols-2">
             <motion.div {...fadeUp} className="rounded-lg border border-border bg-card p-8">
-              <p className="mb-4 font-heading text-sm font-semibold uppercase tracking-wider text-primary">
-                This is for you if
+              <p className="mb-5 font-heading text-sm font-semibold uppercase tracking-wider text-primary">
+                Good fit
               </p>
               <ul className="space-y-3 text-sm text-foreground">
-                <li className="flex gap-3"><span className="mt-0.5 text-primary">--</span> You run a service business generating consistent revenue</li>
-                <li className="flex gap-3"><span className="mt-0.5 text-primary">--</span> You have staff handling repetitive administrative tasks</li>
-                <li className="flex gap-3"><span className="mt-0.5 text-primary">--</span> You lose leads or revenue due to process gaps</li>
-                <li className="flex gap-3"><span className="mt-0.5 text-primary">--</span> You need systems that work without constant oversight</li>
+                <li className="flex gap-3"><span className="mt-0.5 text-primary">--</span> Established service business with existing clients</li>
+                <li className="flex gap-3"><span className="mt-0.5 text-primary">--</span> Consistent inbound lead flow that needs structure</li>
+                <li className="flex gap-3"><span className="mt-0.5 text-primary">--</span> Manual administrative workload consuming staff hours</li>
+                <li className="flex gap-3"><span className="mt-0.5 text-primary">--</span> Operational bottlenecks slowing delivery or response</li>
+                <li className="flex gap-3"><span className="mt-0.5 text-primary">--</span> Owner or manager spending time coordinating instead of growing</li>
+                <li className="flex gap-3"><span className="mt-0.5 text-primary">--</span> Revenue is there but processes are inefficient</li>
               </ul>
             </motion.div>
             <motion.div {...fadeUp} transition={{ duration: 0.5, delay: 0.1 }} className="rounded-lg border border-border bg-card p-8">
-              <p className="mb-4 font-heading text-sm font-semibold uppercase tracking-wider text-subtle">
-                This is not for you if
+              <p className="mb-5 font-heading text-sm font-semibold uppercase tracking-wider text-subtle">
+                Not a fit
               </p>
               <ul className="space-y-3 text-sm text-muted-foreground">
-                <li className="flex gap-3"><span className="mt-0.5">--</span> You are just starting out and do not yet have clients</li>
-                <li className="flex gap-3"><span className="mt-0.5">--</span> You want a cheap chatbot or simple form</li>
-                <li className="flex gap-3"><span className="mt-0.5">--</span> You are looking for a DIY tool to configure yourself</li>
-                <li className="flex gap-3"><span className="mt-0.5">--</span> Your budget is under 5,000 EUR for a complete system</li>
+                <li className="flex gap-3"><span className="mt-0.5">--</span> Very early stage startup without established operations</li>
+                <li className="flex gap-3"><span className="mt-0.5">--</span> Looking for a DIY automation tool to configure yourself</li>
+                <li className="flex gap-3"><span className="mt-0.5">--</span> Business with almost no operational volume to automate</li>
+                <li className="flex gap-3"><span className="mt-0.5">--</span> Looking for a cheap experiment rather than infrastructure</li>
+                <li className="flex gap-3"><span className="mt-0.5">--</span> One person side project without real process complexity</li>
               </ul>
             </motion.div>
           </div>
