@@ -19,10 +19,10 @@ const problems = [
 ];
 
 const solutions = [
-  { icon: Zap, title: "Deterministic workflows", desc: "Every lead, payment, and delivery step follows a defined path with no ambiguity." },
-  { icon: ShieldCheck, title: "State-based automation", desc: "Systems track where each item is and trigger the correct next action automatically." },
-  { icon: ArrowRight, title: "Payment-triggered actions", desc: "Service delivery begins the moment payment clears. No manual activation required." },
-  { icon: Eye, title: "Monitoring and alerts", desc: "Real-time visibility into every workflow. Failures surface immediately, not days later." },
+  { icon: Zap, title: "Self-executing workflows", desc: "Operations run on defined logic, not manual coordination. No one needs to remember, chase, or trigger the next step." },
+  { icon: ShieldCheck, title: "Staff-independent processes", desc: "Critical workflows continue regardless of who is available. No single person becomes a bottleneck or point of failure." },
+  { icon: ArrowRight, title: "Structured operational systems", desc: "Every process follows a determined path from input to completion. Manual handoffs and ad hoc steps are replaced entirely." },
+  { icon: Eye, title: "Continuous operational visibility", desc: "Every workflow is tracked in real time. When something fails, the system surfaces it immediately — not when a client complains." },
 ];
 
 const Index = () => {
@@ -161,9 +161,9 @@ const Index = () => {
       <section className="py-20">
         <div className="container">
           <SectionHeading
-            label="The solution"
-            title="Structured systems that execute without ambiguity"
-            description="We replace ad hoc processes with deterministic workflows. Every input has a defined output. Every step is tracked, measured, and recoverable."
+            label="What we install"
+            title="Operational infrastructure that runs without you"
+            description="Baseline Digital replaces manual execution with structured systems. The result is operational independence — your business continues to function whether or not any specific person is available to coordinate it."
           />
           <div className="grid gap-6 md:grid-cols-2">
             {solutions.map((s, i) => (
