@@ -12,10 +12,24 @@ export default defineConfig(({ mode }) => ({
       overlay: false,
     },
   },
+
   plugins: [react(), mode === "development" && componentTagger()].filter(Boolean),
+
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
+    },
+  },
+
+  build: {
+    rollupOptions: {
+      input: {
+        main: path.resolve(__dirname, "index.html"),
+        book: path.resolve(__dirname, "public/book.html"),
+        howItWorks: path.resolve(__dirname, "public/how-it-works.html"),
+        useCases: path.resolve(__dirname, "public/use-cases.html"),
+        process: path.resolve(__dirname, "public/process.html"),
+      },
     },
   },
 }));
