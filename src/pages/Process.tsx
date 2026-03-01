@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { ArrowRight, Search, PenTool, Wrench, BarChart3 } from "lucide-react";
+import { ArrowRight, Search, PenTool, Wrench, BarChart3, Clock, Check } from "lucide-react";
 import SectionHeading from "@/components/SectionHeading";
+import { fadeUp, containerReveal, itemReveal } from "@/lib/animations";
 
 const phases = [
   {
@@ -39,62 +40,79 @@ const phases = [
 ];
 
 const Process = () => (
-  <div className="min-h-screen pt-16">
-    <section className="border-b border-border py-20">
-      <div className="container">
-        <SectionHeading
-          label="Process"
-          title="How we build your systems"
-          description="Every engagement follows a structured process. No scope creep. No ambiguity. Clear deliverables at each stage."
-        />
-        <div className="space-y-6">
-          {phases.map((phase, i) => (
-            <motion.div
-              key={phase.num}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.4, delay: i * 0.1 }}
-              className="grid gap-6 rounded-lg border border-border bg-card p-8 md:grid-cols-[200px_1fr]"
-            >
-              <div>
-                <div className="flex items-center gap-3">
-                  <div className="flex h-10 w-10 items-center justify-center rounded-md bg-secondary">
-                    <phase.icon size={18} className="text-primary" />
-                  </div>
-                  <span className="font-heading text-sm font-medium text-primary/50">{phase.num}</span>
-                </div>
-                <h3 className="mt-4 font-heading text-xl font-semibold">{phase.title}</h3>
-                <p className="mt-1 text-xs text-muted-foreground">{phase.duration}</p>
-              </div>
-              <div>
-                <p className="text-sm leading-relaxed text-muted-foreground">{phase.desc}</p>
-                <div className="mt-4 flex flex-wrap gap-2">
-                  {phase.deliverables.map((d) => (
-                    <span key={d} className="rounded-md border border-border bg-secondary px-3 py-1 text-xs text-secondary-foreground">
-                      {d}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </motion.div>
-          ))}
-        </div>
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="mt-12"
-        >
-          <Link
-            to="/book"
-            className="inline-flex items-center gap-2 rounded-md bg-primary px-6 py-3 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90"
+  <div className="min-h-screen pt-32 pb-32">
+    <section className="container">
+      <SectionHeading
+        label="Execution"
+        title="Predictable stages, clear results"
+        description="Every engagement follows a structured process. Minimal friction, maximal transparency, and clear deliverables at each stage."
+      />
+
+      <motion.div
+        initial="initial"
+        whileInView="animate"
+        viewport={{ once: true }}
+        variants={containerReveal}
+        className="mt-20 space-y-12"
+      >
+        {phases.map((phase, i) => (
+          <motion.div
+            key={phase.num}
+            variants={itemReveal}
+            className="group relative grid gap-12 rounded-[2.5rem] glass-card p-12 md:grid-cols-[320px_1fr] hover:border-primary/30 transition-all hover:bg-white/[0.03]"
           >
-            Start With an Audit
-            <ArrowRight size={16} />
-          </Link>
-        </motion.div>
-      </div>
+            <div className="flex flex-col">
+              <div className="flex items-center gap-4 mb-2">
+                <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-primary text-primary-foreground shadow-lg shadow-primary/20">
+                  <phase.icon size={24} />
+                </div>
+                <div className="font-heading text-4xl font-black text-white/5 group-hover:text-primary/10 transition-colors">
+                  {phase.num}
+                </div>
+              </div>
+              <h3 className="mt-4 font-heading text-3xl font-bold">{phase.title}</h3>
+              <div className="mt-4 inline-flex items-center gap-2 rounded-full border border-white/5 bg-white/5 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-primary">
+                <Clock size={12} />
+                {phase.duration}
+              </div>
+            </div>
+
+            <div className="flex flex-col justify-center">
+              <p className="text-xl leading-relaxed text-muted-foreground mb-10">{phase.desc}</p>
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
+                {phase.deliverables.map((d) => (
+                  <div key={d} className="flex items-center gap-3">
+                    <div className="h-6 w-6 rounded-full bg-primary/10 flex items-center justify-center text-primary ring-1 ring-primary/20">
+                      <Check size={14} />
+                    </div>
+                    <span className="text-sm font-semibold text-foreground/80">{d}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </motion.div>
+        ))}
+      </motion.div>
+
+      <motion.div
+        initial="initial"
+        whileInView="animate"
+        viewport={{ once: true }}
+        variants={fadeUp}
+        className="mt-24 text-center glass-card rounded-3xl p-20 bg-primary/5 border-none ring-1 ring-white/5"
+      >
+        <h2 className="font-heading text-4xl font-bold mb-8">Ready to blueprint your automation?</h2>
+        <p className="text-xl text-muted-foreground mb-12 max-w-2xl mx-auto leading-relaxed">
+          The first step is always an audit. We map your operations and identify the biggest revenue leaks.
+        </p>
+        <Link
+          to="/book"
+          className="btn-premium group inline-flex items-center gap-4 rounded-full px-12 py-6 text-xl font-bold text-primary-foreground shadow-2xl transition-all hover:scale-105"
+        >
+          Start With an Audit
+          <ArrowRight size={26} className="transition-transform group-hover:translate-x-1" />
+        </Link>
+      </motion.div>
     </section>
   </div>
 );
