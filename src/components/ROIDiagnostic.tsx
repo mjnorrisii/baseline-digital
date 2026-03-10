@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { Link } from "react-router-dom";
 import { ArrowRight, Calculator, TrendingDown, Clock, ShieldCheck } from "lucide-react";
 
 const ROIDiagnostic = () => {
@@ -153,13 +154,13 @@ const ROIDiagnostic = () => {
                                     </p>
 
                                     <div className="pt-4 space-y-4">
-                                        <button
-                                            onClick={() => (window.location.href = "/book")}
+                                        <Link
+                                            to="/book"
                                             className="w-full btn-premium rounded-2xl py-5 font-bold text-lg flex items-center justify-center gap-2"
                                         >
                                             Patch the Leak
                                             <ArrowRight size={20} />
-                                        </button>
+                                        </Link>
                                         <button
                                             onClick={() => setStep(1)}
                                             className="text-muted-foreground hover:text-white text-sm font-semibold transition-colors"

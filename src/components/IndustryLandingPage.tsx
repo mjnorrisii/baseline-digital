@@ -14,9 +14,10 @@ interface IndustryPageProps {
     problems: { title: string; desc: string }[];
     solutions: { icon: any; title: string; desc: string }[];
     metrics: { value: string; label: string }[];
+    visual?: React.ReactNode;
 }
 
-const IndustryLandingPage = ({ title, subtitle, description, path, problems, solutions, metrics }: IndustryPageProps) => {
+const IndustryLandingPage = ({ title, subtitle, description, path, problems, solutions, metrics, visual }: IndustryPageProps) => {
     return (
         <div className="min-h-screen pt-32 pb-32">
             <BreadcrumbSchema items={[{ name: "Home", item: "/" }, { name: title, item: path }]} />
@@ -120,10 +121,14 @@ const IndustryLandingPage = ({ title, subtitle, description, path, problems, sol
                             </div>
                         </div>
                         <div className="glass-card p-4 rounded-[2rem] ring-1 ring-white/10">
-                            <div className="aspect-video rounded-[1.5rem] bg-brand-deep flex items-center justify-center border border-white/5 relative overflow-hidden group">
-                                <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent" />
-                                <div className="text-primary font-heading font-bold text-lg opacity-50 group-hover:opacity-100 transition-opacity">Built for Scale</div>
-                            </div>
+                            {visual ? (
+                                visual
+                            ) : (
+                                <div className="aspect-video rounded-[1.5rem] bg-brand-deep flex items-center justify-center border border-white/5 relative overflow-hidden group">
+                                    <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-transparent" />
+                                    <div className="text-primary font-heading font-bold text-lg opacity-50 group-hover:opacity-100 transition-opacity">Built for Scale</div>
+                                </div>
+                            )}
                         </div>
                     </div>
                 </div>

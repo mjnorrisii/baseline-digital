@@ -52,11 +52,16 @@ const FounderProfile = () => {
                             <span className="text-sm font-bold text-muted-foreground uppercase tracking-widest">Connect:</span>
                             <div className="flex gap-4">
                                 {[
-                                    { icon: Linkedin, path: "#" },
-                                    { icon: Twitter, path: "#" },
-                                    { icon: Mail, path: "mailto:michael@baselinedigital.io" }
+                                    { icon: Linkedin, path: "https://www.linkedin.com/in/mjnorrisii" },
+                                    { icon: Mail, path: "mailto:michael@baselinedigital.dk" }
                                 ].map((s, i) => (
-                                    <a key={i} href={s.path} className="h-10 w-10 rounded-full bg-white/5 flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-white/10 transition-all border border-white/5">
+                                    <a
+                                        key={i}
+                                        href={s.path}
+                                        target={s.path.startsWith('http') ? "_blank" : undefined}
+                                        rel={s.path.startsWith('http') ? "noopener noreferrer" : undefined}
+                                        className="h-10 w-10 rounded-full bg-white/5 flex items-center justify-center text-muted-foreground hover:text-primary hover:bg-white/10 transition-all border border-white/5"
+                                    >
                                         <s.icon size={18} />
                                     </a>
                                 ))}

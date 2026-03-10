@@ -40,20 +40,17 @@ const testimonials = [
   {
     quote: "Baseline didn't just automate our emails; they rebuilt how our entire fulfillment team communicates. We're seeing 30% more throughput with the same headcount.",
     author: "Sarah Chen",
-    role: "COO at NexaLogistics",
-    image: "/images/testimonial_1.webp"
+    role: "COO at NexaLogistics"
   },
   {
     quote: "The 'missed follow-up' problem was costing us hundreds of thousands. Baseline's re-engagement loop paid for itself in the first 14 days.",
     author: "Marcus Thorne",
-    role: "Founder of Thorne Real Estate",
-    image: "/images/testimonial_2.webp"
+    role: "Founder of Thorne Real Estate"
   },
   {
     quote: "I was skeptical about 'industrial-grade' automation until I saw the error handling. Most tools break. This one flags the issue and keeps running.",
     author: "Elena Rodriguez",
-    role: "Director of Ops, ScaleUp Lab",
-    image: "/images/testimonial_3.webp"
+    role: "Director of Ops, ScaleUp Lab"
   }
 ];
 
@@ -387,8 +384,8 @@ const Index = () => {
                 </p>
 
                 <div className="mt-auto flex items-center gap-4">
-                  <div className="h-14 w-14 rounded-full border-2 border-primary/20 overflow-hidden shrink-0 shadow-lg">
-                    <img src={t.image} alt={t.author} loading="lazy" className="h-full w-full object-cover" />
+                  <div className="h-14 w-14 rounded-full border-2 border-primary/20 bg-primary/10 flex items-center justify-center shrink-0 shadow-lg text-primary font-heading font-black text-xl">
+                    {t.author.split(' ').map(n => n[0]).join('')}
                   </div>
                   <div>
                     <div className="font-heading font-bold text-lg leading-none">{t.author}</div>
