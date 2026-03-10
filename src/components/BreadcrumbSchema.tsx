@@ -17,7 +17,7 @@ const BreadcrumbSchema: FC<BreadcrumbSchemaProps> = ({ items }) => {
             "@type": "ListItem",
             "position": index + 1,
             "name": item.name,
-            "item": `https://baselinedigital.io${item.item}`
+            "item": `https://www.baselinedigital.dk${item.item}`
         }))
     };
 

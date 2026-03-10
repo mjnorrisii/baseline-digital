@@ -9,10 +9,10 @@ const PersonSchema: FC = () => {
         "organization": {
             "@type": "Organization",
             "name": "Baseline Digital",
-            "url": "https://baselinedigital.io"
+            "url": "https://www.baselinedigital.dk"
         },
-        "url": "https://baselinedigital.io",
-        "image": "https://baselinedigital.io/images/michael-norris.webp",
+        "url": "https://www.baselinedigital.dk",
+        "image": "https://www.baselinedigital.dk/images/michael-norris.webp",
         "description": "Michael Norris is the founder of Baseline Digital, specializing in industrial-grade revenue and operations automation for service businesses.",
         "sameAs": []
     };
