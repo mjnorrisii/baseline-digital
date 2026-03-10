@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import { ArrowRight, Search, PenTool, Wrench, BarChart3, Clock, Check } from "lucide-react";
 import SectionHeading from "@/components/SectionHeading";
 import { fadeUp, containerReveal, itemReveal } from "@/lib/animations";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
+import AppBreadcrumbs from "@/components/AppBreadcrumbs";
 
 const phases = [
   {
@@ -41,6 +43,18 @@ const phases = [
 
 const Process = () => (
   <div className="min-h-screen pt-32 pb-32">
+    <BreadcrumbSchema
+      items={[
+        { name: "Home", item: "/" },
+        { name: "Process", item: "/process" },
+      ]}
+    />
+    <AppBreadcrumbs
+      items={[
+        { name: "Home", path: "/" },
+        { name: "Process" },
+      ]}
+    />
     <section className="container">
       <SectionHeading
         label="Execution"

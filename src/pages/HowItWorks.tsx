@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import { ArrowRight, Zap, Target, Mail, CreditCard, Box, PieChart } from "lucide-react";
 import SectionHeading from "@/components/SectionHeading";
 import { fadeUp, containerReveal, itemReveal } from "@/lib/animations";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
+import AppBreadcrumbs from "@/components/AppBreadcrumbs";
 
 const steps = [
   {
@@ -45,6 +47,18 @@ const steps = [
 
 const HowItWorks = () => (
   <div className="min-h-screen pt-32 pb-32">
+    <BreadcrumbSchema
+      items={[
+        { name: "Home", item: "/" },
+        { name: "How It Works", item: "/how-it-works" },
+      ]}
+    />
+    <AppBreadcrumbs
+      items={[
+        { name: "Home", path: "/" },
+        { name: "How It Works" },
+      ]}
+    />
     <section className="container">
       <SectionHeading
         label="The Blueprint"

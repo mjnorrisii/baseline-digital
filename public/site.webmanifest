@@ -1,0 +1,15 @@
+{
+    "name": "Baseline Digital",
+    "short_name": "Baseline",
+    "icons": [
+        {
+            "src": "/icon.svg",
+            "sizes": "any",
+            "type": "image/svg+xml"
+        }
+    ],
+    "theme_color": "#0a1128",
+    "background_color": "#0a1128",
+    "display": "standalone",
+    "start_url": "/"
+}

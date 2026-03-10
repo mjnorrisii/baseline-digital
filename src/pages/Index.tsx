@@ -4,6 +4,7 @@ import { ArrowRight, AlertTriangle, Zap, Eye, ShieldCheck, CheckCircle2, Plus, M
 import SectionHeading from "@/components/SectionHeading";
 import { fadeUp, containerReveal, itemReveal, staggerContainer } from "@/lib/animations";
 import { useState } from "react";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
 
 const problems = [
   { title: "Missed follow-ups", desc: "Leads go cold because no one follows up within the window that matters." },
@@ -77,6 +78,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen">
+      <BreadcrumbSchema items={[{ name: "Home", item: "/" }]} />
       {/* Hero */}
       <section className="surface-grid relative flex min-h-screen items-center border-b border-white/5 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-transparent to-transparent pointer-events-none" />

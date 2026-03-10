@@ -3,6 +3,8 @@ import { motion } from "framer-motion";
 import { ArrowRight, Inbox, MessageSquare, CreditCard, Activity, Plug, CheckCircle2 } from "lucide-react";
 import SectionHeading from "@/components/SectionHeading";
 import { fadeUp, containerReveal, itemReveal } from "@/lib/animations";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
+import AppBreadcrumbs from "@/components/AppBreadcrumbs";
 
 const cases = [
   {
@@ -39,6 +41,18 @@ const cases = [
 
 const UseCases = () => (
   <div className="min-h-screen pt-32 pb-32">
+    <BreadcrumbSchema
+      items={[
+        { name: "Home", item: "/" },
+        { name: "Use Cases", item: "/use-cases" },
+      ]}
+    />
+    <AppBreadcrumbs
+      items={[
+        { name: "Home", path: "/" },
+        { name: "Use Cases" },
+      ]}
+    />
     <section className="container">
       <SectionHeading
         label="Capabilities"

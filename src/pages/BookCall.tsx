@@ -4,6 +4,8 @@ import { CheckCircle2, Calendar, Clock, Globe, ArrowLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 import SectionHeading from "@/components/SectionHeading";
 import { fadeUp, itemReveal } from "@/lib/animations";
+import BreadcrumbSchema from "@/components/BreadcrumbSchema";
+import AppBreadcrumbs from "@/components/AppBreadcrumbs";
 
 const expectations = [
   { title: "Operational Audit", desc: "We review your current tool stack and identify the manual bottlenecks costing you the most time." },
@@ -55,6 +57,18 @@ const BookCall = () => {
 
   return (
     <div className="min-h-screen pt-24 pb-20">
+      <BreadcrumbSchema
+        items={[
+          { name: "Home", item: "/" },
+          { name: "Book a Call", item: "/book" },
+        ]}
+      />
+      <AppBreadcrumbs
+        items={[
+          { name: "Home", path: "/" },
+          { name: "Book a Call" },
+        ]}
+      />
       <div className="container">
         <Link to="/" className="inline-flex items-center gap-2 text-sm font-semibold text-muted-foreground hover:text-primary transition-colors mb-12">
           <ArrowLeft size={16} />
