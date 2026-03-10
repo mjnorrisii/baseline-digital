@@ -14,6 +14,8 @@ import HowItWorks from "./pages/HowItWorks";
 import UseCases from "./pages/UseCases";
 import Process from "./pages/Process";
 import BookCall from "./pages/BookCall";
+import LogisticsAutomation from "./pages/industries/Logistics";
+import RealEstateOperations from "./pages/industries/RealEstate";
 import NotFound from "./pages/NotFound";
 
 const ScrollToTop = () => {
@@ -43,6 +45,8 @@ const TransitionWrapper = () => {
           <Route path="/use-cases" element={<UseCases />} />
           <Route path="/process" element={<Process />} />
           <Route path="/book" element={<BookCall />} />
+          <Route path="/logistics-automation" element={<LogisticsAutomation />} />
+          <Route path="/real-estate-operations" element={<RealEstateOperations />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </motion.div>

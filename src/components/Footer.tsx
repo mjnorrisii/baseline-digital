@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="border-t border-white/5 bg-brand-deep/50 py-24">
       <div className="container">
-        <div className="grid gap-12 lg:grid-cols-4 md:grid-cols-2">
+        <div className="grid gap-12 lg:grid-cols-5 md:grid-cols-2">
           <div className="col-span-1 lg:col-span-1">
             <Link to="/" className="group flex items-center gap-2 mb-6">
               <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-primary to-electric-indigo flex items-center justify-center text-primary-foreground font-bold shadow-lg shadow-primary/20">
@@ -29,6 +29,23 @@ const Footer = () => {
                 { label: "Use Cases", path: "/use-cases" },
                 { label: "Process", path: "/process" },
                 { label: "Book Strategy Call", path: "/book" },
+              ].map((item) => (
+                <li key={item.path}>
+                  <Link to={item.path} className="text-muted-foreground hover:text-foreground transition-colors inline-flex items-center gap-1 group">
+                    {item.label}
+                    <ArrowRight size={12} className="opacity-0 -translate-x-2 transition-all group-hover:opacity-100 group-hover:translate-x-0" />
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-heading text-sm font-bold uppercase tracking-widest text-primary mb-6">Industries</h4>
+            <ul className="space-y-4">
+              {[
+                { label: "Logistics Automation", path: "/logistics-automation" },
+                { label: "Real Estate Operations", path: "/real-estate-operations" },
               ].map((item) => (
                 <li key={item.path}>
                   <Link to={item.path} className="text-muted-foreground hover:text-foreground transition-colors inline-flex items-center gap-1 group">

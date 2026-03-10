@@ -5,6 +5,9 @@ import SectionHeading from "@/components/SectionHeading";
 import { fadeUp, containerReveal, itemReveal, staggerContainer } from "@/lib/animations";
 import { useState } from "react";
 import BreadcrumbSchema from "@/components/BreadcrumbSchema";
+import ROIDiagnostic from "@/components/ROIDiagnostic";
+import FounderProfile from "@/components/FounderProfile";
+import PersonSchema from "@/components/PersonSchema";
 
 const problems = [
   { title: "Missed follow-ups", desc: "Leads go cold because no one follows up within the window that matters." },
@@ -38,19 +41,19 @@ const testimonials = [
     quote: "Baseline didn't just automate our emails; they rebuilt how our entire fulfillment team communicates. We're seeing 30% more throughput with the same headcount.",
     author: "Sarah Chen",
     role: "COO at NexaLogistics",
-    image: "/images/testimonial_1.png"
+    image: "/images/testimonial_1.webp"
   },
   {
     quote: "The 'missed follow-up' problem was costing us hundreds of thousands. Baseline's re-engagement loop paid for itself in the first 14 days.",
     author: "Marcus Thorne",
     role: "Founder of Thorne Real Estate",
-    image: "/images/testimonial_2.png"
+    image: "/images/testimonial_2.webp"
   },
   {
     quote: "I was skeptical about 'industrial-grade' automation until I saw the error handling. Most tools break. This one flags the issue and keeps running.",
     author: "Elena Rodriguez",
     role: "Director of Ops, ScaleUp Lab",
-    image: "/images/testimonial_3.png"
+    image: "/images/testimonial_3.webp"
   }
 ];
 
@@ -79,6 +82,7 @@ const Index = () => {
   return (
     <div className="min-h-screen">
       <BreadcrumbSchema items={[{ name: "Home", item: "/" }]} />
+      <PersonSchema />
       {/* Hero */}
       <section className="surface-grid relative flex min-h-screen items-center border-b border-white/5 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-transparent to-transparent pointer-events-none" />
@@ -169,6 +173,9 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      <ROIDiagnostic />
+
 
       {/* Qualification */}
       <section className="relative border-b border-white/5 py-32">
@@ -268,8 +275,9 @@ const Index = () => {
               className="relative aspect-square md:aspect-video rounded-2xl border border-white/10 glass-card overflow-hidden group shadow-2xl"
             >
               <img
-                src="/images/automation_nodes.png"
+                src="/images/automation_nodes.webp"
                 alt="Automation nodes"
+                loading="lazy"
                 className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-brand-deep/80 to-transparent" />
@@ -380,7 +388,7 @@ const Index = () => {
 
                 <div className="mt-auto flex items-center gap-4">
                   <div className="h-14 w-14 rounded-full border-2 border-primary/20 overflow-hidden shrink-0 shadow-lg">
-                    <img src={t.image} alt={t.author} className="h-full w-full object-cover" />
+                    <img src={t.image} alt={t.author} loading="lazy" className="h-full w-full object-cover" />
                   </div>
                   <div>
                     <div className="font-heading font-bold text-lg leading-none">{t.author}</div>
@@ -392,6 +400,9 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      <FounderProfile />
+
 
       {/* FAQ */}
       <section className="py-32">

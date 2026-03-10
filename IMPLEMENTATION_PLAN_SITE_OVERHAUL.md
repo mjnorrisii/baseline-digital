@@ -35,7 +35,20 @@ This plan outlines the steps to elevate the **Baseline Digital** website from a 
 ### Phase 4: Interaction & Polish
 - [x] **Scroll Reveal Animations**: Add `framer-motion` `whileInView` triggers to all major sections and cards.
 - [x] **Route Transitions**: Ensure smooth transitions between page navigations.
-- [x] **Performance & SEO Audit**: Final check for speed and semantic HTML structure.
+### Phase 5: Conversion & Trust Architecture
+- [x] **Operational ROI Diagnostic**: Build an interactive leads/cost calculator component to demonstrate value.
+- [x] **Industry-Specific Landing Pages**:
+    - [x] Create specialized layouts for **Logistics Automation**.
+    - [x] Create specialized layouts for **Real Estate Operations**.
+- [x] **Founder Authority (E-E-A-T)**:
+    - [x] Implement Michael Norris's founder profile with updated professional portrait.
+    - [x] Strip image metadata for privacy.
+    - [x] Inject `Person` and `Author` JSON-LD schema.
+
+### Phase 6: Performance Edge
+- [x] **Image Asset Optimization**: Convert all site images to WebP and implement lazy-loading.
+- [x] **Script Budgeting**: Audit and optimize Cal.com and animation execution.
+- [x] **Lighthouse Target**: Achieve 100/100 performance, accessibility, and SEO score.
 
 ---
 
