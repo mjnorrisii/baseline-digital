@@ -28,12 +28,11 @@ const Navbar = () => {
       }`}>
       <div className="container flex items-center justify-between">
         <Link to="/" className="group flex items-center gap-2">
-          <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-primary to-electric-indigo flex items-center justify-center text-primary-foreground font-bold shadow-lg shadow-primary/20">
-            B
-          </div>
-          <span className="font-heading text-xl font-bold tracking-tight text-heading">
-            Baseline<span className="text-primary">.</span>
-          </span>
+          <img
+            src="/logo.png"
+            alt="Baseline Digital Logo"
+            className="h-24 w-auto transition-all duration-300 group-hover:scale-105"
+          />
         </Link>
 
         {/* Desktop */}

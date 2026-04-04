@@ -8,12 +8,11 @@ const Footer = () => {
         <div className="grid gap-12 lg:grid-cols-5 md:grid-cols-2">
           <div className="col-span-1 lg:col-span-1">
             <Link to="/" className="group flex items-center gap-2 mb-6">
-              <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-primary to-electric-indigo flex items-center justify-center text-primary-foreground font-bold shadow-lg shadow-primary/20">
-                B
-              </div>
-              <span className="font-heading text-xl font-bold tracking-tight text-heading">
-                Baseline<span className="text-primary">.</span>
-              </span>
+              <img
+                src="/logo.png"
+                alt="Baseline Digital Logo"
+                className="h-48 w-auto transition-transform group-hover:scale-105"
+              />
             </Link>
             <p className="text-base text-muted-foreground leading-relaxed max-w-xs">
               Infrastructure-grade automation for high-volume service businesses. We build the systems that run your business.
