@@ -47,8 +47,11 @@ const ROIDiagnostic = () => {
     ];
 
     return (
-        <section className="py-32 bg-brand-deep relative overflow-hidden">
-            <div className="absolute top-0 left-1/4 w-1/2 h-1/2 bg-primary/10 blur-[160px] rounded-full pointer-events-none" />
+        <section className="py-32 relative overflow-hidden" style={{ background: "linear-gradient(to bottom, #050a12, #030609)" }}>
+            <div className="glow-line absolute top-0 inset-x-0" />
+            <div className="absolute inset-0 surface-grid opacity-20" />
+            <div className="absolute top-0 left-1/4 w-1/2 h-1/2 rounded-full pointer-events-none"
+              style={{ background: "radial-gradient(ellipse, rgba(0,229,255,0.07) 0%, transparent 70%)" }} />
 
             <div className="container max-w-5xl relative z-10">
                 <div className="grid gap-16 lg:grid-cols-[1.2fr_1fr] items-center">

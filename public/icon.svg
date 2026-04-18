@@ -1,10 +1,14 @@
 <svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="brand-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#7c7fff" /> <!-- Electric Indigo -->
-      <stop offset="100%" stop-color="#5599ff" /> <!-- Primary Blue -->
+      <stop offset="0%" stop-color="#00e5ff" />
+      <stop offset="100%" stop-color="#6366f1" />
     </linearGradient>
   </defs>
-  <rect width="512" height="512" rx="112" fill="url(#brand-gradient)"/>
-  <text x="50%" y="54%" dominant-baseline="middle" text-anchor="middle" fill="white" font-family="Space Grotesk, sans-serif" font-weight="700" font-size="320">B</text>
+  <rect width="512" height="512" rx="112" fill="#030609"/>
+  <path d="M144 448L208 64" stroke="url(#brand-gradient)" stroke-width="40" stroke-linecap="round" />
+  <path d="M368 448L304 64" stroke="url(#brand-gradient)" stroke-width="40" stroke-linecap="round" />
+  <path d="M160 368H352" stroke="url(#brand-gradient)" stroke-width="32" stroke-linecap="round" />
+  <path d="M184 256H328" stroke="url(#brand-gradient)" stroke-width="32" stroke-linecap="round" opacity="0.8" />
+  <path d="M208 144H304" stroke="url(#brand-gradient)" stroke-width="32" stroke-linecap="round" opacity="0.6" />
 </svg>
