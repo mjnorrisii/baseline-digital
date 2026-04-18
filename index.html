@@ -17,6 +17,15 @@
   <link rel="apple-touch-icon" href="/favicon.png" />
   <link rel="manifest" href="/site.webmanifest" />
 
+  <!-- Fonts: preconnect + async-stylesheet pattern.
+       Previously imported via CSS @import which blocks first paint. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" />
+  <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600&display=swap" />
+
   <meta property="og:title" content="Baseline Digital — Industrial-Grade Operations Automation" />
   <meta property="og:description"
     content="Replace manual work with structured automation systems that run without human coordination. Built for high-volume service businesses." />

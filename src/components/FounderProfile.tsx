@@ -81,7 +81,6 @@ const FounderProfile = () => {
                     rel={s.path.startsWith("http") ? "noopener noreferrer" : undefined}
                     aria-label={s.label}
                     className="h-10 w-10 rounded-full flex items-center justify-center text-white/40 hover:text-[#00e5ff] transition-all border border-white/8 hover:border-[#00e5ff]/30 hover:bg-[#00e5ff]/5"
-                    style={{ backdropFilter: "blur(8px)" }}
                   >
                     <s.icon size={16} />
                   </a>
@@ -120,8 +119,8 @@ const FounderProfile = () => {
             <motion.div
               initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }} transition={{ delay: 0.5, duration: 0.5 }}
-              className="absolute -bottom-6 -left-6 glass-card rounded-2xl p-6 z-20 border"
-              style={{ backdropFilter: "blur(24px)", borderColor: "rgba(0,229,255,0.2)", boxShadow: "0 0 30px rgba(0,229,255,0.08)" }}
+              className="absolute -bottom-6 -left-6 rounded-2xl p-6 z-20 border"
+              style={{ background: "rgba(6,10,14,0.95)", borderColor: "rgba(0,229,255,0.2)", boxShadow: "0 0 30px rgba(0,229,255,0.08)" }}
             >
               <div className="font-heading text-xl font-black text-white">Michael Norris</div>
               <div className="text-xs text-[#00e5ff] font-bold uppercase tracking-widest mt-1">Founder @ Baseline Digital</div>

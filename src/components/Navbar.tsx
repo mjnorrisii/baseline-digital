@@ -16,9 +16,21 @@ const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
+  // Throttled scroll listener: rAF + passive.
+  // Previously set state on every scroll pixel, forcing React re-renders.
   useEffect(() => {
-    const handleScroll = () => setScrolled(window.scrollY > 30);
-    window.addEventListener("scroll", handleScroll);
+    let ticking = false;
+    const handleScroll = () => {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(() => {
+        setScrolled(window.scrollY > 30);
+        ticking = false;
+      });
+    };
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    // Set initial value
+    handleScroll();
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -26,8 +38,8 @@ const Navbar = () => {
     <nav className={`glass-nav transition-all duration-500 ${scrolled ? "py-3" : "py-4"}`}>
       <div className="container flex items-center justify-between">
         {/* Logo */}
-        <Link to="/" className="group flex items-center gap-3">
-          <Logo className="h-9 w-auto" />
+        <Link to="/" className="group flex items-center gap-3" aria-label="Baseline Digital home">
+          <Logo size="h-10" />
         </Link>
 
         {/* Desktop Nav */}
@@ -84,7 +96,7 @@ const Navbar = () => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="border-t border-white/5 bg-[#030609]/98 backdrop-blur-2xl px-6 py-6 md:hidden overflow-hidden"
+            className="border-t border-white/5 bg-[#030609]/98 px-6 py-6 md:hidden overflow-hidden"
           >
             <div className="flex flex-col gap-2">
               {navItems.map((item) => (

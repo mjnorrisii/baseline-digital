@@ -40,15 +40,22 @@ export default function LiveActivityTerminal() {
   }, [currentIndex]);
 
   return (
-    <div className="relative w-full rounded-2xl overflow-hidden border border-white/8 shadow-2xl"
-      style={{ background: "rgba(0,0,0,0.7)", backdropFilter: "blur(32px)" }}>
-      
+    <div
+      className="relative w-full rounded-2xl overflow-hidden border border-white/8 shadow-2xl"
+      /* Perf: replaced backdropFilter: "blur(32px)" with opaque bg. Saves GPU re-sampling on every frame. */
+      style={{ background: "rgba(6,10,14,0.95)" }}
+    >
       {/* Top glow accent */}
-      <div className="absolute top-0 inset-x-0 h-px" style={{ background: "linear-gradient(to right, transparent, #00e5ff44, transparent)" }} />
+      <div
+        className="absolute top-0 inset-x-0 h-px"
+        style={{ background: "linear-gradient(to right, transparent, #00e5ff44, transparent)" }}
+      />
 
       {/* Terminal Header */}
-      <div className="flex items-center gap-2 border-b border-white/6 px-4 py-3"
-        style={{ background: "rgba(255,255,255,0.02)" }}>
+      <div
+        className="flex items-center gap-2 border-b border-white/6 px-4 py-3"
+        style={{ background: "rgba(255,255,255,0.02)" }}
+      >
         <div className="flex gap-1.5">
           <div className="h-3 w-3 rounded-full bg-red-500/80" style={{ boxShadow: "0 0 8px rgba(239,68,68,0.5)" }} />
           <div className="h-3 w-3 rounded-full bg-amber-400/80" style={{ boxShadow: "0 0 8px rgba(251,191,36,0.5)" }} />
@@ -67,8 +74,9 @@ export default function LiveActivityTerminal() {
             {lines.map((line, i) => (
               <motion.div
                 key={`${i}-${line.text}`}
-                initial={{ opacity: 0, filter: "blur(4px)", x: -6 }}
-                animate={{ opacity: 1, filter: "blur(0px)", x: 0 }}
+                /* Perf: removed filter: blur() from line reveal — opacity + x transform is plenty */
+                initial={{ opacity: 0, x: -6 }}
+                animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.25, ease: "easeOut" }}
                 className={`${line.color || "text-white/55"}`}
               >

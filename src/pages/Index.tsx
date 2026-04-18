@@ -154,8 +154,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen">
-      <div className="scanline-overlay" />
-      <div className="noise-overlay" />
+      {/* Removed: scanline-overlay + noise-overlay — fixed full-viewport layers were expensive on every paint */}
       <BreadcrumbSchema items={[{ name: "Home", item: "/" }]} />
       <PersonSchema />
 
@@ -231,9 +230,9 @@ const Index = () => {
                   <AnimatePresence mode="wait">
                     <motion.span
                       key={wordIndex}
-                      initial={{ opacity: 0, y: 20, filter: "blur(8px)" }}
-                      animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-                      exit={{ opacity: 0, y: -20, filter: "blur(8px)" }}
+                      initial={{ opacity: 0, y: 20 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      exit={{ opacity: 0, y: -20 }}
                       transition={{ duration: 0.4, ease: "easeOut" }}
                       className="text-[#00e5ff] inline-block"
                       style={{ textShadow: "0 0 40px rgba(0,229,255,0.4)" }}
@@ -288,8 +287,8 @@ const Index = () => {
 
             {/* Right: Terminal */}
             <motion.div
-              initial={{ opacity: 0, x: 40, filter: "blur(10px)" }}
-              animate={{ opacity: 1, x: 0, filter: "blur(0px)" }}
+              initial={{ opacity: 0, x: 40 }}
+              animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.9, delay: 0.3, ease: "easeOut" }}
               className="relative"
             >

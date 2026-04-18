@@ -60,7 +60,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <div className="noise-overlay" />
+        {/* Removed: <div className="noise-overlay" /> — fixed full-viewport SVG noise was a major compositing/paint cost on scroll */}
         <ScrollToTop />
         <Navbar />
         <main>
