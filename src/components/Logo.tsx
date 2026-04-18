@@ -28,7 +28,7 @@ const Logo = ({
         <source srcSet="/logo-icon.webp" type="image/webp" />
         <img
           src="/logo-icon.png"
-          alt="Baseline Digital"
+          alt=""
           className={`${size} w-auto object-contain`}
           width={400}
           height={400}

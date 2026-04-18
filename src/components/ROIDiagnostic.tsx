@@ -123,6 +123,7 @@ const ROIDiagnostic = () => {
                                             value={steps[step - 1].value}
                                             onChange={(e) => steps[step - 1].setValue(parseInt(e.target.value))}
                                             className="w-full account-slider cursor-pointer accent-primary"
+                                            aria-label="Number of accounts"
                                         />
                                     </div>
 

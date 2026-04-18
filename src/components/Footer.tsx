@@ -56,7 +56,7 @@ const Footer = () => {
             <Link to="/" className="group inline-flex mb-6">
               <Logo className="h-10 w-auto" />
             </Link>
-            <p className="text-sm text-white/35 leading-relaxed max-w-xs">
+            <p className="text-sm text-white/60 leading-relaxed max-w-xs">
               Infrastructure-grade automation for high-volume service businesses. We build the systems that run your business.
             </p>
 
@@ -73,7 +73,7 @@ const Footer = () => {
                   aria-label={s.label}
                   target={s.href.startsWith("http") ? "_blank" : undefined}
                   rel={s.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                  className="h-9 w-9 rounded-full flex items-center justify-center text-white/30 hover:text-[#00e5ff] transition-all border border-white/8 hover:border-[#00e5ff]/30 hover:bg-[#00e5ff]/5"
+                  className="h-9 w-9 rounded-full flex items-center justify-center text-white/55 hover:text-[#00e5ff] transition-all border border-white/8 hover:border-[#00e5ff]/30 hover:bg-[#00e5ff]/5"
                 >
                   <s.icon size={14} />
                 </a>
@@ -95,7 +95,7 @@ const Footer = () => {
                 <li key={item.path}>
                   <Link
                     to={item.path}
-                    className="text-sm text-white/35 hover:text-white/80 transition-colors inline-flex items-center gap-1.5 group"
+                    className="text-sm text-white/60 hover:text-white/80 transition-colors inline-flex items-center gap-1.5 group"
                   >
                     <ArrowRight size={10} className="opacity-0 -translate-x-1 transition-all duration-200 group-hover:opacity-100 group-hover:translate-x-0" />
                     {item.label}
@@ -116,7 +116,7 @@ const Footer = () => {
                 <li key={item.path}>
                   <Link
                     to={item.path}
-                    className="text-sm text-white/35 hover:text-white/80 transition-colors inline-flex items-center gap-1.5 group"
+                    className="text-sm text-white/60 hover:text-white/80 transition-colors inline-flex items-center gap-1.5 group"
                   >
                     <ArrowRight size={10} className="opacity-0 -translate-x-1 transition-all duration-200 group-hover:opacity-100 group-hover:translate-x-0" />
                     {item.label}
@@ -133,7 +133,7 @@ const Footer = () => {
               <li>
                 <a
                   href="mailto:contact@baselinedigital.dk"
-                  className="text-sm text-white/35 hover:text-white/70 transition-colors flex items-center gap-2 group"
+                  className="text-sm text-white/60 hover:text-white/70 transition-colors flex items-center gap-2 group"
                 >
                   <div className="h-7 w-7 rounded-lg flex items-center justify-center shrink-0 transition-colors group-hover:bg-[#00e5ff]/10"
                     style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.06)" }}>
@@ -142,7 +142,7 @@ const Footer = () => {
                   contact@baselinedigital.dk
                 </a>
               </li>
-              <li className="flex items-center gap-2 text-sm text-white/35">
+              <li className="flex items-center gap-2 text-sm text-white/60">
                 <div className="h-7 w-7 rounded-lg flex items-center justify-center shrink-0"
                   style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.06)" }}>
                   <Globe size={13} />
@@ -156,10 +156,10 @@ const Footer = () => {
 
         {/* Bottom strip */}
         <div className="mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-xs text-white/20">
+          <p className="text-xs text-white/50">
             © {new Date().getFullYear()} Baseline Digital. All rights reserved.
           </p>
-          <div className="flex gap-6 text-xs text-white/20 font-medium uppercase tracking-widest">
+          <div className="flex gap-6 text-xs text-white/50 font-medium uppercase tracking-widest">
             <a href="#" className="hover:text-white/50 transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-white/50 transition-colors">Terms of Service</a>
           </div>

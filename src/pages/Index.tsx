@@ -494,7 +494,7 @@ const Index = () => {
               />
               <div className="absolute inset-0" style={{ background: "linear-gradient(to top, rgba(3,6,9,0.9) 0%, transparent 60%)" }} />
               <div className="absolute bottom-8 left-8 right-8">
-                <h4 className="font-heading text-xl font-bold text-white">Hardened Industrial-Grade Systems</h4>
+                <h3 className="font-heading text-xl font-bold text-white">Hardened Industrial-Grade Systems</h3>
                 <p className="mt-2 text-sm text-white/60">Engineered to handle peak operational load without friction.</p>
               </div>
             </motion.div>
