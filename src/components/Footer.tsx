@@ -64,7 +64,7 @@ const Footer = () => {
             <div className="mt-8 flex gap-3">
               {[
                 { icon: Linkedin, href: "https://www.linkedin.com/in/mjnorrisii", label: "LinkedIn" },
-                { icon: Mail, href: "mailto:contact@baselinedigital.dk", label: "Email" },
+                { icon: Mail, href: "mailto:info@baselinedigital.dk", label: "Email" },
                 { icon: Globe, href: "#", label: "Website" },
               ].map((s, i) => (
                 <a
@@ -132,14 +132,14 @@ const Footer = () => {
             <ul className="space-y-4">
               <li>
                 <a
-                  href="mailto:contact@baselinedigital.dk"
+                  href="mailto:info@baselinedigital.dk"
                   className="text-sm text-white/60 hover:text-white/70 transition-colors flex items-center gap-2 group"
                 >
                   <div className="h-7 w-7 rounded-lg flex items-center justify-center shrink-0 transition-colors group-hover:bg-[#00e5ff]/10"
                     style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.06)" }}>
                     <Mail size={13} />
                   </div>
-                  contact@baselinedigital.dk
+                  info@baselinedigital.dk
                 </a>
               </li>
               <li className="flex items-center gap-2 text-sm text-white/60">
