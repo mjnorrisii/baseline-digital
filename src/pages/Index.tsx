@@ -127,7 +127,7 @@ function MarqueeTicker() {
       <div className="marquee-track">
         {doubled.map((name, i) => (
           <div key={i} className="flex items-center gap-2 mx-8">
-            <span className="font-heading text-lg font-bold text-white/30 hover:text-white/70 transition-colors cursor-default whitespace-nowrap tracking-tight">
+            <span className="font-heading text-lg font-bold text-white/60 hover:text-white/90 transition-colors cursor-default whitespace-nowrap tracking-tight">
               {name}
             </span>
             <span className="text-[#00e5ff]/20 text-xs">◆</span>
@@ -274,7 +274,7 @@ const Index = () => {
                 <div className="flex -space-x-2">
                   {["SC", "MT", "ER"].map((init, i) => (
                     <div key={i} className="h-8 w-8 rounded-full border-2 border-[#030609] flex items-center justify-center text-[10px] font-black text-white"
-                      style={{ background: `hsl(${[192, 235, 265][i]} 70% 40%)` }}>
+                      style={{ background: `hsl(${[192, 235, 265][i]} 70% ${[30, 40, 40][i]}%)` }}>
                       {init}
                     </div>
                   ))}
@@ -344,7 +344,7 @@ const Index = () => {
       {/* ── INTEGRATION MARQUEE ─────────────────────────────────────────── */}
       <section className="py-14 border-y border-white/4" style={{ background: "#030609" }}>
         <div className="container mb-6">
-          <p className="text-center text-[11px] font-bold uppercase tracking-[0.25em] text-white/25 mb-8">
+          <p className="text-center text-[11px] font-bold uppercase tracking-[0.25em] text-white/60 mb-8">
             Native integrations with 100+ tools in your stack
           </p>
         </div>

@@ -83,7 +83,7 @@ const Footer = () => {
 
           {/* Navigation */}
           <div>
-            <h4 className="text-xs font-bold uppercase tracking-widest text-[#00e5ff] mb-6">Navigation</h4>
+            <h3 className="text-xs font-bold uppercase tracking-widest text-[#00e5ff] mb-6">Navigation</h3>
             <ul className="space-y-3">
               {[
                 { label: "Home", path: "/" },
@@ -107,7 +107,7 @@ const Footer = () => {
 
           {/* Industries */}
           <div>
-            <h4 className="text-xs font-bold uppercase tracking-widest text-[#00e5ff] mb-6">Industries</h4>
+            <h3 className="text-xs font-bold uppercase tracking-widest text-[#00e5ff] mb-6">Industries</h3>
             <ul className="space-y-3">
               {[
                 { label: "Logistics Automation", path: "/logistics-automation" },
@@ -128,7 +128,7 @@ const Footer = () => {
 
           {/* Contact */}
           <div>
-            <h4 className="text-xs font-bold uppercase tracking-widest text-[#00e5ff] mb-6">Connect</h4>
+            <h3 className="text-xs font-bold uppercase tracking-widest text-[#00e5ff] mb-6">Connect</h3>
             <ul className="space-y-4">
               <li>
                 <a
