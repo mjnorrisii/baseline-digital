@@ -16,6 +16,12 @@ import Process from "./pages/Process";
 import BookCall from "./pages/BookCall";
 import LogisticsAutomation from "./pages/industries/Logistics";
 import RealEstateOperations from "./pages/industries/RealEstate";
+import Industries from "./pages/Industries";
+import MedSpas from "./pages/industries/MedSpas";
+import HVAC from "./pages/industries/HVAC";
+import Plumbing from "./pages/industries/Plumbing";
+import Dental from "./pages/industries/Dental";
+import Roofing from "./pages/industries/Roofing";
 import NotFound from "./pages/NotFound";
 
 const ScrollToTop = () => {
@@ -47,6 +53,12 @@ const TransitionWrapper = () => {
           <Route path="/book" element={<BookCall />} />
           <Route path="/logistics-automation" element={<LogisticsAutomation />} />
           <Route path="/real-estate-operations" element={<RealEstateOperations />} />
+          <Route path="/industries" element={<Industries />} />
+          <Route path="/med-spas" element={<MedSpas />} />
+          <Route path="/hvac" element={<HVAC />} />
+          <Route path="/plumbing" element={<Plumbing />} />
+          <Route path="/dental-clinics" element={<Dental />} />
+          <Route path="/roofing" element={<Roofing />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </motion.div>
