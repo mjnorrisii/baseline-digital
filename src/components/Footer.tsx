@@ -110,8 +110,13 @@ const Footer = () => {
             <h3 className="text-xs font-bold uppercase tracking-widest text-[#00e5ff] mb-6">Industries</h3>
             <ul className="space-y-3">
               {[
-                { label: "Logistics Automation", path: "/logistics-automation" },
-                { label: "Real Estate Operations", path: "/real-estate-operations" },
+                { label: "Real Estate", path: "/real-estate-operations" },
+                { label: "Logistics", path: "/logistics-automation" },
+                { label: "Med Spas", path: "/med-spas" },
+                { label: "HVAC", path: "/hvac" },
+                { label: "Plumbing", path: "/plumbing" },
+                { label: "Dental Clinics", path: "/dental-clinics" },
+                { label: "Roofing", path: "/roofing" },
               ].map((item) => (
                 <li key={item.path}>
                   <Link
