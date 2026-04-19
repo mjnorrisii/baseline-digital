@@ -1,5 +1,5 @@
 import IndustryLandingPage from "@/components/IndustryLandingPage";
-import { Zap, Clock, BarChart, Users, MessageSquare, ShieldCheck } from "lucide-react";
+import { Zap, Clock, BarChart, Users } from "lucide-react";
 
 const LeadScoringVisual = () => (
     <div className="aspect-video rounded-[2.5rem] bg-[#050a18] p-10 flex flex-col justify-between border border-white/5 relative overflow-hidden group">
@@ -49,24 +49,24 @@ const LeadScoringVisual = () => (
 const RealEstateOperations = () => {
     return (
         <IndustryLandingPage
-            title="Real Estate Operations"
-            subtitle="The High-Volume Property Engine for modern firms."
-            description="Stop chasing leads manually. We install the lead triage, qualification, and automated nurturing loops that turn inquiries into signed contracts silently."
+            title="Real Estate"
+            subtitle="Real estate is won in the first five minutes. We build the systems that never miss them."
+            description="Stop losing leads to slow response times and cold CRMs. We install the infrastructure that qualifies inquiries instantly, nurtures prospects without manual follow up, and keeps your pipeline working while you're in showings."
             path="/real-estate-operations"
             metrics={[
-                { value: "0", label: "Missed follow-ups in 90 days" },
-                { value: "320%", label: "Increase in lead booking rate" },
-                { value: "24h", label: "Automated nurture cycles" },
+                { value: "< 90s", label: "First response to every new lead" },
+                { value: "4.1x", label: "Lift in lead-to-appointment conversion" },
+                { value: "24/7", label: "Pipeline nurture across every channel" },
             ]}
             problems={[
-                { title: "Leads Slipping Through", desc: "Zillow, Streeteasy, and website leads are scattered across inboxes and forgotten." },
-                { title: "Bottleneck Souring", desc: "One busy day in the field results in 48 hours of silence for interested prospects." },
-                { title: "Manual Data Copying", desc: "Agent time is wasted copying lead contact info from emails into the CRM." },
+                { title: "Response Lag", desc: "Most real estate leads convert with the agent who replies first. If your average response time is over five minutes, you're losing to competitors with SMS automation while you're mid-showing." },
+                { title: "Pipeline Rot", desc: "Your CRM has 1,800 leads in it. Maybe 40 are getting touched this month. The rest are a dead asset that used to cost you $30 per lead in ads, now sitting idle because no one has time to work them." },
+                { title: "Coordination Tax", desc: "Showing requests, follow up calls, open house confirmations, listing updates. Agents burn 10+ hours a week on coordination work that has nothing to do with selling homes." },
             ]}
             solutions={[
-                { icon: Zap, title: "Infinite Intake Engine", desc: "Leads from every portal are instantly parsed, scored, and routed to the right agent." },
-                { icon: MessageSquare, title: "AI-assisted Triage", desc: "Prospects are qualified via automated conversation before they ever reach an agent." },
-                { icon: Clock, title: "Persistent Nurture Loops", desc: "If a lead doesn't book immediately, the system engages them for 90 days silently." },
+                { icon: Zap, title: "Instant Lead Qualification", desc: "Inbound leads from Zillow, website forms, and IDX get auto qualified, scored, and routed to the right agent within 90 seconds, with a first touch already sent before you pick up the phone." },
+                { icon: Clock, title: "Pipeline Nurture Engine", desc: "Every lead gets placed on a behavior-based sequence: open house follow ups, neighborhood updates, price drops on saved searches. Cold leads warm up without a single manual touch." },
+                { icon: BarChart, title: "Showing and Comms Automation", desc: "Showing requests auto-book into your calendar with confirmation cascades. Listing changes trigger client updates. Your admin work drops by 10+ hours a week without adding staff." },
             ]}
             visual={<LeadScoringVisual />}
         />

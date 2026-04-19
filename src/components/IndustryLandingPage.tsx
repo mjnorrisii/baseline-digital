@@ -113,7 +113,7 @@ const IndustryLandingPage = ({ title, subtitle, description, path, problems, sol
                                             <s.icon size={24} />
                                         </div>
                                         <div>
-                                            <h4 className="font-heading text-xl font-bold mb-2">{s.title}</h4>
+                                            <h3 className="font-heading text-xl font-bold mb-2">{s.title}</h3>
                                             <p className="text-muted-foreground">{s.desc}</p>
                                         </div>
                                     </div>

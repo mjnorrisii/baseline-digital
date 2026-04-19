@@ -46,9 +46,9 @@ const DispatchVisual = () => (
 const LogisticsAutomation = () => {
     return (
         <IndustryLandingPage
-            title="Logistics Automation"
-            subtitle="The Logistics Industry is built on volume. We build it for speed."
-            description="Stop copying data between portals. We install the infrastructure that captures, triages, and executes your freight and dispatch operations silently."
+            title="Logistics"
+            subtitle="Logistics is built on volume. We build it for speed."
+            description="Stop copying data between portals and chasing status updates. We install the infrastructure that captures, triages, and executes your freight and dispatch operations silently."
             path="/logistics-automation"
             metrics={[
                 { value: "4.2h", label: "Saved per dispatch inquiry" },
@@ -56,14 +56,14 @@ const LogisticsAutomation = () => {
                 { value: "24/7", label: "Automated status updates" },
             ]}
             problems={[
-                { title: "Portal Fatigue", desc: "Drivers and dispatchers wasting hours manually updating 4+ different portals for single shipments." },
-                { title: "Status Latency", desc: "Clients calling for updates because the manual tracking hasn't been updated since morning." },
-                { title: "Handoff Friction", desc: "Warehouse staff waiting on paperwork that's sitting in an inbox no one checked." },
+                { title: "Portal Fatigue", desc: "Dispatchers burning hours manually updating four or more carrier portals for every shipment. Same data entered four times, four chances for error, zero leverage." },
+                { title: "Status Latency", desc: "Clients calling for updates because your tracking hasn't been touched since the morning standup. Every status call is a dispatcher pulled off live operations to read a screen back to a customer." },
+                { title: "Handoff Friction", desc: "Warehouse staff waiting on paperwork that's sitting in an inbox no one checked. Loads sit, trucks idle, and the cost of the delay compounds down the chain." },
             ]}
             solutions={[
-                { icon: Zap, title: "Self-executing Dispatch", desc: "Leads from tenders are parsed and routed to matching carriers in seconds, not hours." },
-                { icon: Clock, title: "Automated Milestone Tracking", desc: "Shipment status is pulled from carriers and pushed to your client portal without human touch." },
-                { icon: BarChart, title: "Fleet-wide Triage", desc: "Every bottleneck is visualized on a real-time dashboard. If a load is late, the system alerts you immediately." },
+                { icon: Zap, title: "Self Executing Dispatch", desc: "Tenders are parsed and routed to matching carriers in seconds. Rate confirmations, load assignments, and driver notifications fire without a dispatcher touching the keyboard." },
+                { icon: Clock, title: "Automated Milestone Tracking", desc: "Shipment status is pulled from carrier APIs and pushed to your client portal in real time. Customers see every milestone without a single phone call routed through dispatch." },
+                { icon: BarChart, title: "Fleet Wide Triage", desc: "Every bottleneck visualized on a real time dashboard. Late loads, idle trucks, and stalled handoffs trigger alerts the moment they happen, not the moment a client complains." },
             ]}
             visual={<DispatchVisual />}
         />
