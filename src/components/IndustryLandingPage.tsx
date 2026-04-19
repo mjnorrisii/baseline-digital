@@ -145,6 +145,15 @@ const IndustryLandingPage = ({ title, subtitle, description, path, problems, sol
                         Begin Deployment
                         <ArrowRight size={26} className="transition-transform group-hover:translate-x-1" />
                     </Link>
+                    <div className="mt-12">
+                        <Link
+                            to="/industries"
+                            className="group inline-flex items-center gap-2 text-sm font-bold text-muted-foreground hover:text-primary transition-colors"
+                        >
+                            See all industries
+                            <ArrowRight size={14} className="transition-transform group-hover:translate-x-1" />
+                        </Link>
+                    </div>
                 </div>
             </section>
         </div>
