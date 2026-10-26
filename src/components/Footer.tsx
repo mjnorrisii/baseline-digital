@@ -111,7 +111,7 @@ const Footer = () => {
             <ul className="space-y-3">
               {[
                 { label: "Real Estate", path: "/real-estate-operations" },
-                { label: "Logistics", path: "/logistics-automation" },
+                { label: "Transport and Logistics", path: "/logistics-automation" },
                 { label: "Med Spas", path: "/med-spas" },
                 { label: "HVAC", path: "/hvac" },
                 { label: "Plumbing", path: "/plumbing" },
