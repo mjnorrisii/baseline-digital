@@ -55,13 +55,13 @@ const RealEstateOperations = () => {
             path="/real-estate-operations"
             metrics={[
                 { value: "< 90s", label: "First response to every new lead" },
-                { value: "4.1x", label: "Lift in lead-to-appointment conversion" },
+                { value: "Instant", label: "Reply and booking started on every new lead" },
                 { value: "24/7", label: "Pipeline nurture across every channel" },
             ]}
             problems={[
-                { title: "Response Lag", desc: "Most real estate leads convert with the agent who replies first. If your average response time is over five minutes, you're losing to competitors with SMS automation while you're mid-showing." },
-                { title: "Pipeline Rot", desc: "Your CRM has 1,800 leads in it. Maybe 40 are getting touched this month. The rest are a dead asset that used to cost you $30 per lead in ads, now sitting idle because no one has time to work them." },
-                { title: "Coordination Tax", desc: "Showing requests, follow up calls, open house confirmations, listing updates. Agents burn 10+ hours a week on coordination work that has nothing to do with selling homes." },
+                { title: "Response Lag", desc: "Leads often go to the agent who replies first. If your response time is slow, you lose to competitors with SMS automation while you are mid showing." },
+                { title: "Pipeline Rot", desc: "Your CRM holds leads you paid to get, and only a handful get touched each month. The rest sit idle because no one has time to work them." },
+                { title: "Coordination Tax", desc: "Showing requests, follow up calls, open house confirmations, listing updates. Agents burn hours every week on coordination work that has nothing to do with selling homes." },
             ]}
             solutions={[
                 { icon: Zap, title: "Instant Lead Qualification", desc: "Inbound leads from Zillow, website forms, and IDX get auto qualified, scored, and routed to the right agent within 90 seconds, with a first touch already sent before you pick up the phone." },

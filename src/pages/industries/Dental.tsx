@@ -56,13 +56,13 @@ const Dental = () => {
             description="Stop leaving revenue in empty slots and lapsed recalls. We install the infrastructure that fills cancellations, revives dormant patients, and handles insurance verification without the front desk drowning."
             path="/dental-clinics"
             metrics={[
-                { value: "92%", label: "Chair utilization across the schedule" },
-                { value: "3 min", label: "Insurance verification per new patient" },
-                { value: "< 5 min", label: "Cancellation refilled from waitlist" },
+                { value: "Waitlist", label: "Cancellations offered to waiting patients automatically" },
+                { value: "3 min", label: "Target insurance verification per new patient" },
+                { value: "< 5 min", label: "Target to refill a cancelled slot" },
             ]}
             problems={[
-                { title: "Empty-Chair Bleed", desc: "An empty chair at 2pm costs a general practice roughly $400. Without an automated waitlist that fires the instant a cancellation hits, that slot stays empty and the revenue is gone for good." },
-                { title: "Recall Decay", desc: "Roughly 40% of patients miss their 6-month recall. That's not a reminder problem, it's a system problem. Manual recall lists stop getting worked the moment the front desk gets busy, and busy is every day." },
+                { title: "Empty-Chair Bleed", desc: "An empty chair at 2pm is lost production for the day. Without an automated waitlist that fires the instant a cancellation hits, that slot stays empty and the revenue is gone for good." },
+                { title: "Recall Decay", desc: "Many patients miss their six month recall, and the cause is the system, not the patient. Manual recall lists stop getting worked the moment the front desk gets busy, and busy is every day." },
                 { title: "Insurance Bottleneck", desc: "New patient calls at 9am, treatment plan blocked until insurance is verified, first appointment pushed to next week. Half of them never come back. The front desk wastes hours on eligibility checks that a system should handle in seconds." },
             ]}
             solutions={[
