@@ -64,7 +64,7 @@ const ROIDiagnostic = () => {
                             What is your <span className="text-gradient-electric">operational leak</span>?
                         </h2>
                         <p className="text-lg text-muted-foreground leading-relaxed mb-10">
-                            Broken follow-ups and manual data copying aren't just frustrating — they're expensive. Use our diagnostic tool to see how much revenue you're leaving on the table every month.
+                            Broken follow-ups and manual data copying aren't just frustrating. They're expensive. Use our diagnostic tool to see how much revenue you're leaving on the table every month.
                         </p>
 
                         <div className="space-y-4">

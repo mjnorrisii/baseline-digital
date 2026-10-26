@@ -59,4 +59,4 @@ This plan outlines the steps to elevate the **Baseline Digital** website from a 
 > Use `framer-motion` for all non-trivial animations to maintain a "fluid" feel. Avoid jarring transitions.
 
 > [!IMPORTANT]
-> Maintain the core "Baseline Digital" brand identity—don't lose the professional/authoritative tone while adding visual flair.
+> Maintain the core "Baseline Digital" brand identity; don't lose the professional/authoritative tone while adding visual flair.

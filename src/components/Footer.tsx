@@ -39,7 +39,7 @@ const Footer = () => {
                 id="footer-cta-btn"
                 className="btn-premium group inline-flex items-center gap-2 rounded-full px-10 py-5 text-base font-bold text-[#030609]"
               >
-                Book Strategy Call — Free
+                Book a Free Strategy Call
                 <ArrowRight size={18} className="transition-transform group-hover:translate-x-1" />
               </Link>
             </div>

@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 const terminalLines = [
   { text: "> Initializing ops engine...", delay: 600 },
   { text: "> Scanning workflow graph [12 nodes]", delay: 1600, color: "text-white/60" },
-  { text: "> ALERT: Bottleneck at Step 04 — Manual Entry", delay: 3000, color: "text-amber-400" },
+  { text: "> ALERT: Bottleneck at Step 04 (Manual Entry)", delay: 3000, color: "text-amber-400" },
   { text: "> Deploying automation schema v2.4...", delay: 4400 },
   { text: "> Trigger: New Lead Captured [source: Typeform]", delay: 5600, color: "text-[#00e5ff]" },
   { text: "> CRM sync complete (94ms)", delay: 6600, color: "text-emerald-400" },
@@ -74,7 +74,7 @@ export default function LiveActivityTerminal() {
             {lines.map((line, i) => (
               <motion.div
                 key={`${i}-${line.text}`}
-                /* Perf: removed filter: blur() from line reveal — opacity + x transform is plenty */
+                /* Perf: removed filter: blur() from line reveal; opacity + x transform is plenty */
                 initial={{ opacity: 0, x: -6 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.25, ease: "easeOut" }}
