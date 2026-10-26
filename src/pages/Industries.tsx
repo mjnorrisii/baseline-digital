@@ -15,7 +15,7 @@ const industries = [
     },
     {
         icon: Truck,
-        title: "Logistics",
+        title: "Transport and Logistics",
         hook: "Dispatch without the dispatchers",
         path: "/logistics-automation",
     },

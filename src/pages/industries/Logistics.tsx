@@ -46,13 +46,13 @@ const DispatchVisual = () => (
 const LogisticsAutomation = () => {
     return (
         <IndustryLandingPage
-            title="Logistics"
-            subtitle="Logistics is built on volume. We build it for speed."
-            description="Stop copying data between portals and chasing status updates. We install the infrastructure that captures, triages, and executes your freight and dispatch operations silently."
+            title="Transport and Logistics"
+            subtitle="Transport and logistics run on volume. We build them for speed."
+            description="Stop copying data between portals and chasing status updates. We install the infrastructure that captures, triages, and executes your transport, freight, and dispatch operations silently."
             path="/logistics-automation"
             metrics={[
-                { value: "4.2h", label: "Saved per dispatch inquiry" },
-                { value: "98%", label: "Reduction in manual entry error" },
+                { value: "Every load", label: "Captured and routed automatically" },
+                { value: "One entry", label: "Data keyed once, synced to every portal" },
                 { value: "24/7", label: "Automated status updates" },
             ]}
             problems={[
