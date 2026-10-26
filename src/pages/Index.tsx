@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { motion, useInView, AnimatePresence } from "framer-motion";
 import {
   ArrowRight, AlertTriangle, Zap, Eye, ShieldCheck, CheckCircle2,
-  Plus, Minus, Quote, TrendingUp, Clock, Users, Activity
+  Plus, Minus, Clock, Users, Activity
 } from "lucide-react";
 import SectionHeading from "@/components/SectionHeading";
 import { fadeUp, containerReveal, itemReveal, staggerContainer } from "@/lib/animations";
@@ -13,6 +13,7 @@ import FounderProfile from "@/components/FounderProfile";
 import PersonSchema from "@/components/PersonSchema";
 import SpotlightCard from "@/components/SpotlightCard";
 import LiveActivityTerminal from "@/components/LiveActivityTerminal";
+import { caseStudies } from "@/data/caseStudies";
 
 // ─── Data ──────────────────────────────────────────────────────────────────
 
@@ -39,32 +40,10 @@ const integrations = [
   "Airtable", "Notion", "Make", "n8n", "Pipedrive", "Monday", "ClickUp",
 ];
 
-const wins = [
-  { metric: 62, suffix: "%", label: "Less manual entry", detail: "Automated Stripe to HubSpot sync for high-volume service provider.", icon: TrendingUp },
-  { metric: 4, suffix: "h", label: "Saved per lead inquiry", detail: "AI-assisted triage and automated booking for specialized agency.", icon: Clock },
-  { metric: 0, suffix: "", label: "Missed follow-ups / 90 days", detail: "Implemented persistent re-engagement loop for sales team.", icon: CheckCircle2 },
-  { metric: 24, suffix: "/7", label: "Operational uptime", detail: "Client delivery pipeline now runs without human coordination.", icon: Activity },
-];
-
-const testimonials = [
-  {
-    quote: "Baseline didn't just automate our emails. They rebuilt how our entire fulfillment team communicates. We're seeing 30% more throughput with the same headcount.",
-    author: "Sarah Chen",
-    role: "COO at NexaLogistics",
-    initials: "SC",
-  },
-  {
-    quote: "The 'missed follow-up' problem was costing us hundreds of thousands. Baseline's re-engagement loop paid for itself in the first 14 days.",
-    author: "Marcus Thorne",
-    role: "Founder, Thorne Real Estate",
-    initials: "MT",
-  },
-  {
-    quote: "I was skeptical about 'industrial-grade' automation until I saw the error handling. Most tools break. This one flags the issue and keeps running.",
-    author: "Elena Rodriguez",
-    role: "Director of Ops, ScaleUp Lab",
-    initials: "ER",
-  },
+const proofPoints = [
+  { metric: caseStudies.length, suffix: "", label: "Documented case studies", detail: "Operations automation builds with problem, build and tooling written up in full.", icon: CheckCircle2 },
+  { metric: 14, suffix: " days", label: "Target for the first quick win", detail: "Our standard plan: ship one high impact workflow early while the larger system is built.", icon: Clock },
+  { metric: 8, suffix: " weeks", label: "Upper end of a foundational build", detail: "Most foundational infrastructure builds take 4 to 8 weeks.", icon: Activity },
 ];
 
 const faqs = [
@@ -269,18 +248,10 @@ const Index = () => {
                 </Link>
               </motion.div>
 
-              {/* Social proof strip */}
-              <motion.div variants={itemReveal} className="mt-12 flex items-center gap-6">
-                <div className="flex -space-x-2">
-                  {["SC", "MT", "ER"].map((init, i) => (
-                    <div key={i} className="h-8 w-8 rounded-full border-2 border-[#030609] flex items-center justify-center text-[10px] font-black text-white"
-                      style={{ background: `hsl(${[192, 235, 265][i]} 70% ${[30, 40, 40][i]}%)` }}>
-                      {init}
-                    </div>
-                  ))}
-                </div>
+              {/* Proof strip */}
+              <motion.div variants={itemReveal} className="mt-12">
                 <p className="text-sm text-white/40">
-                  <span className="text-white/70 font-semibold">50+ businesses</span> running on Baseline infrastructure
+                  <Link to="/portfolio" className="text-white/70 font-semibold hover:text-[#00e5ff] transition-colors">See the case studies</Link> from live logistics operations
                 </p>
               </motion.div>
             </motion.div>
@@ -360,12 +331,12 @@ const Index = () => {
           >
 
             <motion.h2 variants={itemReveal} className="font-heading text-3xl md:text-5xl font-black text-center mb-16 text-gradient-hero">
-              Real results, not estimates
+              Proof you can inspect
             </motion.h2>
           </motion.div>
 
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6">
-            {wins.map((win, i) => (
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {proofPoints.map((win, i) => (
               <motion.div
                 key={i}
                 initial={{ opacity: 0, y: 30 }}
@@ -584,46 +555,34 @@ const Index = () => {
         </div>
       </section>
 
-      {/* ── TESTIMONIALS ────────────────────────────────────────────────── */}
+      {/* ── SELECTED WORK ───────────────────────────────────────────────── */}
       <section className="py-32 relative overflow-hidden" style={{ background: "#030609" }}>
         <div className="glow-line absolute top-0 inset-x-0" />
         <div className="absolute inset-0 surface-grid opacity-20" />
-        <div className="absolute top-0 right-0 w-1/3 h-full pointer-events-none"
-          style={{ background: "radial-gradient(ellipse at top right, rgba(99,102,241,0.06) 0%, transparent 70%)" }} />
 
         <div className="container relative z-10">
           <SectionHeading
-            label="In Their Own Words"
-            title="What operational leverage looks like"
-            description="We build long-term partnerships with our clients. Here is how their businesses changed after implementing Baseline."
+            label="Selected Work"
+            title="Systems built for live operations"
+            description="Three of our documented builds. Each case study covers the problem, what we built and the tools used."
           />
 
           <div className="mt-20 grid gap-6 lg:grid-cols-3">
-            {testimonials.map((t, i) => (
+            {caseStudies.slice(0, 3).map((c, i) => (
               <motion.div
-                key={i}
+                key={c.id}
                 initial={{ opacity: 0, y: 30 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.15, duration: 0.6 }}
               >
                 <SpotlightCard className="glass-card glass-card-hover animated-border rounded-2xl p-8 relative flex flex-col h-full">
-                  <div className="absolute top-6 right-8 text-[#00e5ff]/15">
-                    <Quote size={48} />
-                  </div>
-                  <p className="text-base leading-relaxed text-white/65 italic mb-8 relative z-10 font-medium">
-                    "{t.quote}"
-                  </p>
-                  <div className="mt-auto flex items-center gap-4 pt-6 border-t border-white/5">
-                    <div className="h-12 w-12 rounded-full flex items-center justify-center shrink-0 font-heading font-black text-sm text-white"
-                      style={{ background: "linear-gradient(135deg, rgba(0,229,255,0.3), rgba(99,102,241,0.3))", border: "2px solid rgba(0,229,255,0.2)", boxShadow: "0 0 15px rgba(0,229,255,0.1)" }}>
-                      {t.initials}
-                    </div>
-                    <div>
-                      <div className="font-heading font-bold text-base text-white leading-none">{t.author}</div>
-                      <div className="text-xs text-[#00e5ff] font-semibold mt-1">{t.role}</div>
-                    </div>
-                  </div>
+                  <h3 className="font-heading text-xl font-bold text-white mb-3">{c.title}</h3>
+                  <p className="text-sm text-white/55 leading-relaxed mb-8">{c.problem}</p>
+                  <Link to="/portfolio" className="mt-auto inline-flex items-center gap-2 text-sm font-semibold text-[#00e5ff] group">
+                    View case study
+                    <ArrowRight size={14} className="transition-transform group-hover:translate-x-1" />
+                  </Link>
                 </SpotlightCard>
               </motion.div>
             ))}
