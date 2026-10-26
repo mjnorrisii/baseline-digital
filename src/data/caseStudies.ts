@@ -39,11 +39,11 @@ export const caseStudies: CaseStudy[] = [
   },
   {
     id: "openShipmentReport",
-    title: "Open Shipment Report (Phase 1)",
+    title: "Open Shipment Report",
     status: "Pilot",
     problem: "Exceptions in open shipments were found late. Status data sat in raw exports.",
     built:
-      "I built a read only workflow that takes TrackIT exports, applies business rules to exclude closed shipments and flag stale or missing statuses, and sends a color coded HTML summary by email. Phase 2, covering write back and scheduling, depends on API access.",
+      "I built a read only workflow that takes TrackIT exports, applies business rules to exclude closed shipments and flag stale or missing statuses, and sends a color coded HTML summary by email.",
     technologies: ["TrackIT exports", "HTML email summary"],
     skills: ["Data processing", "Business rule design", "Exception reporting", "Phased delivery"],
     screenshots: [],
@@ -112,7 +112,7 @@ export const caseStudies: CaseStudy[] = [
     status: null,
     problem: "Routine route list updates were manual and repetitive. So were routine administrative tasks.",
     built:
-      "I built a daily file generator in Power Automate that keeps route lists current, and set up recurring Outlook automatic replies. I also built a Copilot Studio operations agent with SharePoint, Teams, and Mail access, which is pending licensing.",
+      "I built a daily file generator in Power Automate that keeps route lists current, and set up recurring Outlook automatic replies. I also built a Copilot Studio operations agent with SharePoint, Teams, and Mail access.",
     technologies: ["Power Automate", "Outlook", "Copilot Studio", "SharePoint", "Microsoft Teams"],
     skills: ["Power Automate", "Copilot Studio", "Microsoft 365 administration"],
     screenshots: [],
