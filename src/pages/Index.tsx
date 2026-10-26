@@ -23,7 +23,7 @@ const problems = [
   { num: "01", title: "Missed follow-ups", desc: "Leads go cold because no one follows up within the window that matters. Every hour of delay costs conversion rate." },
   { num: "02", title: "Leads slipping through", desc: "Inquiries arrive across channels and disappear into inboxes no one checks. The lead never knew you existed." },
   { num: "03", title: "Manual data copying", desc: "Staff transfer information between tools by hand, introducing errors and delay at every step." },
-  { num: "04", title: "Staff bottlenecks", desc: "Key processes stop when a specific person is unavailable. You've built dependency, not infrastructure." },
+  { num: "04", title: "Staff bottlenecks", desc: "Key processes stop when a specific person is unavailable. You have built dependency where infrastructure should be." },
   { num: "05", title: "Delivery delays", desc: "Service fulfillment stalls because handoffs between steps are manual. Clients feel the gap." },
   { num: "06", title: "Inconsistent quality", desc: "When processes are manual, outcomes depend on the individual. Scaling leads to quality drops and human error." },
 ];
@@ -61,7 +61,7 @@ const faqs = [
   },
   {
     q: "Do you offer ongoing support?",
-    a: "Yes. Every system we install comes with 24/7 monitoring. If a workflow fails due to an API change or unexpected input, we are alerted and fix it before you even know there's a problem.",
+    a: "Yes. Every workflow we build includes error alerting. If a workflow fails due to an API change or unexpected input, we are notified and respond. Support terms are agreed in writing before we start.",
   },
 ];
 
@@ -280,8 +280,8 @@ const Index = () => {
                     <Zap size={16} className="text-[#00e5ff]" />
                   </div>
                   <div>
-                    <div className="text-lg font-black font-heading text-white leading-none">62%</div>
-                    <div className="text-[11px] text-white/40 mt-0.5">Less manual work</div>
+                    <div className="text-lg font-black font-heading text-white leading-none">14 days</div>
+                    <div className="text-[11px] text-white/40 mt-0.5">Target for first quick win</div>
                   </div>
                 </div>
               </motion.div>
@@ -297,8 +297,8 @@ const Index = () => {
                     <CheckCircle2 size={16} className="text-emerald-400" />
                   </div>
                   <div>
-                    <div className="text-lg font-black font-heading text-white leading-none">24/7</div>
-                    <div className="text-[11px] text-white/40 mt-0.5">Uptime guarantee</div>
+                    <div className="text-lg font-black font-heading text-white leading-none">{caseStudies.length}</div>
+                    <div className="text-[11px] text-white/40 mt-0.5">Documented case studies</div>
                   </div>
                 </div>
               </motion.div>
@@ -316,7 +316,7 @@ const Index = () => {
       <section className="py-14 border-y border-white/4" style={{ background: "#030609" }}>
         <div className="container mb-6">
           <p className="text-center text-[11px] font-bold uppercase tracking-[0.25em] text-white/60 mb-8">
-            Native integrations with 100+ tools in your stack
+            Connects with the tools already in your stack
           </p>
         </div>
         <MarqueeTicker />

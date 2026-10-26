@@ -67,7 +67,7 @@ const Industries = () => {
                             The industries we build for.
                         </motion.h1>
                         <motion.p variants={itemReveal} className="text-xl text-muted-foreground leading-relaxed mb-6 max-w-2xl">
-                            Every vertical has its own operational bottleneck. Med spas lose leads to slow response times. Plumbers bleed revenue on one and done jobs. Dental clinics forfeit $400 every time a chair sits empty. The pattern underneath is the same: manual work scales linearly, and linear does not survive growth.
+                            Every vertical has its own operational bottleneck. Med spas lose leads to slow response times. Plumbers bleed revenue on one and done jobs. Dental clinics lose production every time a chair sits empty. The pattern underneath is the same: manual work scales linearly, and linear does not survive growth.
                         </motion.p>
                         <motion.p variants={itemReveal} className="text-xl text-muted-foreground leading-relaxed mb-12 max-w-2xl">
                             Baseline Digital installs the software infrastructure that replaces the manual layer. Below are the industries where the playbook is proven. If yours is not listed, the pattern still applies. The implementation is what changes.

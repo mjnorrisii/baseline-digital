@@ -39,7 +39,7 @@ const FounderProfile = () => {
 
             <div className="space-y-5 text-base text-white/50 leading-relaxed border-l-2 border-[#00e5ff]/20 pl-6">
               <p>
-                I founded <strong className="text-white/80">Baseline Digital</strong> because I saw too many service businesses hitting a ceiling, not because of their talent, but because of their tools.
+                I founded <strong className="text-white/80">Baseline Digital</strong> because I saw too many service businesses hitting a ceiling. Their talent was never the limit. Their tools were.
               </p>
               <p>
                 Operations shouldn't depend on "memory" or manual coordination. When you scale, people make mistakes. Systems don't. I've spent my career designing the industrial-grade infrastructure that lets businesses stop managing tasks and start managing growth.

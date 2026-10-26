@@ -51,21 +51,21 @@ const Roofing = () => {
         <IndustryLandingPage
             title="Roofing"
             subtitle="Roofing is sold in the follow-up, not the estimate. We build the systems that close them."
-            description="Stop losing $20K jobs to slow follow-ups and lost photos. We install the infrastructure that nurtures estimates to close, absorbs storm-lead spikes without hiring, and turns every job site into marketing ammunition."
+            description="Stop losing high ticket jobs to slow follow-ups and lost photos. We install the infrastructure that nurtures estimates to close, absorbs storm-lead spikes without hiring, and turns every job site into marketing ammunition."
             path="/roofing"
             metrics={[
-                { value: "47%", label: "Lift in estimate-to-signed conversion" },
-                { value: "10x", label: "Lead capacity during storm surges" },
-                { value: "100%", label: "Jobs documented with before and after" },
+                { value: "Same day", label: "Estimate follow up starts automatically" },
+                { value: "Surge ready", label: "Lead intake built for storm spikes" },
+                { value: "Every job", label: "Before and after photos attached to the record" },
             ]}
             problems={[
                 { title: "Estimate Graveyard", desc: "A roofer delivers an estimate and waits. Meanwhile, the homeowner is getting three more quotes and deciding on the sales rep who followed up first. Without an automated nurture sequence, half your estimates die in silence." },
-                { title: "Storm-Lead Overwhelm", desc: "A hailstorm hits and inbound leads spike 10x overnight. Your office can't triage fast enough, the best leads go cold, and the competition with a system wins the high-ticket insurance jobs while you're still returning voicemails." },
+                { title: "Storm-Lead Overwhelm", desc: "A hailstorm hits and inbound leads spike overnight. Your office can't triage fast enough, the best leads go cold, and the competition with a system wins the high-ticket insurance jobs while you're still returning voicemails." },
                 { title: "Documentation Chaos", desc: "Before and after photos live on the crew's phones, get lost in group chats, or never make it off the job site. No warranty records, no social proof, no marketing content, and no defense when a customer disputes the work a year later." },
             ]}
             solutions={[
                 { icon: Zap, title: "Estimate-to-Close Nurture", desc: "Every estimate triggers a multi-touch sequence: same-day thank-you, 48-hour testimonial drop, 5-day financing reminder, 10-day scarcity close. Prospects who would have ghosted end up signing." },
-                { icon: Clock, title: "Storm-Surge Lead Engine", desc: "Inbound leads are auto-qualified by damage type, insurance status, and urgency. High-value jobs hit the sales manager instantly, low-value ones get routed to self-service scheduling. Your team handles 10x volume without adding headcount." },
+                { icon: Clock, title: "Storm-Surge Lead Engine", desc: "Inbound leads are auto-qualified by damage type, insurance status, and urgency. High-value jobs hit the sales manager instantly, low-value ones get routed to self-service scheduling. Your team handles surge volume without adding headcount." },
                 { icon: BarChart, title: "Job-Site Documentation System", desc: "Crews submit before and after photos through a guided mobile workflow. Images auto-tag to the job record, populate warranty files, and feed your marketing pipeline. Every completed roof becomes a testimonial asset." },
             ]}
             visual={<EstimatePipelineVisual />}

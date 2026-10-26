@@ -63,7 +63,7 @@ export default function LiveActivityTerminal() {
         </div>
         <div className="mx-auto flex items-center gap-2">
           <div className="pulse-dot" />
-          <span className="text-[10px] font-mono text-white/35 tracking-[0.2em] uppercase">Baseline_Ops_Engine • Live</span>
+          <span className="text-[10px] font-mono text-white/35 tracking-[0.2em] uppercase">Baseline_Ops_Engine • Simulated demo</span>
         </div>
       </div>
 

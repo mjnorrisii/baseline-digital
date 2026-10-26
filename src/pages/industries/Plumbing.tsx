@@ -45,13 +45,13 @@ const Plumbing = () => {
             description="Stop treating every job like a one-off. We install the infrastructure that turns emergency calls into recurring customers, with maintenance plans, follow-ups, and re-bookings running on their own."
             path="/plumbing"
             metrics={[
-                { value: "3.2x", label: "Lifetime value per captured customer" },
-                { value: "67%", label: "Of past customers re-engaged on autopilot" },
-                { value: "< 48hr", label: "Post-job follow-up dispatched every time" },
+                { value: "Repeat", label: "Maintenance and seasonal reminders for every customer" },
+                { value: "Auto", label: "Past customers contacted on a schedule" },
+                { value: "< 48hr", label: "Target for post job follow up on every job" },
             ]}
             problems={[
                 { title: "One-and-Done Jobs", desc: "A burst pipe pays once. The same homeowner needs a water heater, a disposal, and a drain clean within 3 years. Without a follow-up system, that revenue walks to whoever sends the first postcard." },
-                { title: "Dead Customer Database", desc: "You have 2,000 past customer records sitting in your CRM doing nothing. No birthday touch, no maintenance reminder, no seasonal check-in. That's a $200K+ asset rotting on a hard drive." },
+                { title: "Dead Customer Database", desc: "Your CRM holds years of past customer records doing nothing. No maintenance reminder, no seasonal follow up. That is revenue sitting unused." },
                 { title: "Review Gap", desc: "You do great work. The customer forgets your name within 72 hours. No review, no referral, no reason for the neighbor to call you instead of the Google ad at the top of the page." },
             ]}
             solutions={[

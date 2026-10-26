@@ -48,18 +48,18 @@ const MedSpas = () => {
             description="Stop losing inquiries to slow responses. We install the infrastructure that qualifies, books, and follows up on every lead without the front desk touching it."
             path="/med-spas"
             metrics={[
-                { value: "< 60s", label: "Response time on every inquiry" },
-                { value: "85%", label: "Reduction in missed appointments" },
+                { value: "< 60s", label: "Target response time on every inquiry" },
+                { value: "Auto", label: "Reminder sequence before every treatment" },
                 { value: "24/7", label: "Lead qualification and booking" },
             ]}
             problems={[
-                { title: "Response Lag", desc: "78% of med spa leads go cold when first response exceeds five minutes. Your front desk cannot match that speed during back to back treatments." },
-                { title: "Appointment Bleed", desc: "Without automated SMS cascades, missed appointment rates sit at 20 to 30%. For a spa running three treatment rooms, that is $20K+ in lost revenue monthly." },
+                { title: "Response Lag", desc: "Leads go cold fast when the first response is slow. Your front desk cannot match instant speed during back to back treatments." },
+                { title: "Appointment Bleed", desc: "Without automated SMS reminders, missed appointments quietly eat into revenue every month. Every empty treatment room is income you do not get back." },
                 { title: "Review Debt", desc: "Clients forget to leave reviews after treatments. Your best therapists get no social proof while competitors stack five star reviews weekly." },
             ]}
             solutions={[
                 { icon: Zap, title: "Instant Lead Triage", desc: "Inquiries from Instagram DMs, website forms, and missed calls are parsed, qualified, and booked in under 60 seconds. Your best time slots sell themselves." },
-                { icon: Clock, title: "Confirmation Cascade", desc: "Automated SMS and email sequences fire at set intervals before treatment with one tap confirmation. Missed appointments drop to single digits without the front desk lifting a finger." },
+                { icon: Clock, title: "Confirmation Cascade", desc: "Automated SMS and email sequences fire at set intervals before treatment with one tap confirmation. Fewer no shows, without the front desk lifting a finger." },
                 { icon: BarChart, title: "Review Capture Engine", desc: "Post treatment review requests trigger based on treatment type and therapist. Your Google profile stacks reviews on autopilot." },
             ]}
             visual={<BookingResponseVisual />}

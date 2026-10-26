@@ -48,12 +48,12 @@ const HVAC = () => {
             description="Stop losing same-day jobs to voicemail. We install the infrastructure that captures every call, dispatches the right tech, and keeps customers informed without the office scrambling."
             path="/hvac"
             metrics={[
-                { value: "< 2 min", label: "Inbound call to dispatched tech" },
-                { value: "$4K+", label: "Recovered per missed-call month" },
+                { value: "< 2 min", label: "Target from inbound call to dispatch" },
+                { value: "Missed calls", label: "Texted back and booked automatically" },
                 { value: "24/7", label: "After-hours booking and triage" },
             ]}
             problems={[
-                { title: "Missed-Call Revenue Leak", desc: "Roughly 30% of HVAC inbound calls go to voicemail, and 80% of those callers never call back. For a 3-truck operation that's $40K+ in lost jobs per year." },
+                { title: "Missed-Call Revenue Leak", desc: "A large share of HVAC calls go to voicemail, and many of those callers never call back. Every missed call is a job a competitor can pick up." },
                 { title: "Dispatch Chaos", desc: "Office staff juggling a whiteboard, three techs on the phone, and a spreadsheet. One scheduling conflict and the whole day cascades into overtime or cancellations." },
                 { title: "Invoice Drift", desc: "Techs finish the job, forget to log parts, and the invoice sits for a week. Cash flow bleeds while the office chases paperwork instead of booking the next job." },
             ]}
