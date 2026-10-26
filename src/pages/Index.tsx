@@ -48,7 +48,7 @@ const wins = [
 
 const testimonials = [
   {
-    quote: "Baseline didn't just automate our emails — they rebuilt how our entire fulfillment team communicates. We're seeing 30% more throughput with the same headcount.",
+    quote: "Baseline didn't just automate our emails. They rebuilt how our entire fulfillment team communicates. We're seeing 30% more throughput with the same headcount.",
     author: "Sarah Chen",
     role: "COO at NexaLogistics",
     initials: "SC",
@@ -154,7 +154,7 @@ const Index = () => {
 
   return (
     <div className="min-h-screen">
-      {/* Removed: scanline-overlay + noise-overlay — fixed full-viewport layers were expensive on every paint */}
+      {/* Removed: scanline-overlay + noise-overlay: fixed full-viewport layers were expensive on every paint */}
       <BreadcrumbSchema items={[{ name: "Home", item: "/" }]} />
       <PersonSchema />
 
@@ -247,7 +247,7 @@ const Index = () => {
                 variants={itemReveal}
                 className="mt-8 text-lg leading-relaxed text-white/55 max-w-lg font-body"
               >
-                Baseline Digital builds industrial-grade automation infrastructure for high-volume service businesses — so your operations run without you.
+                Baseline Digital builds industrial-grade automation infrastructure for high-volume service businesses, so your operations run without you.
               </motion.p>
 
               <motion.div variants={itemReveal} className="mt-10 flex flex-wrap gap-4">
@@ -469,7 +469,7 @@ const Index = () => {
               </h2>
               <div className="space-y-6 text-base text-white/50 leading-relaxed">
                 <p>
-                  Most automation fails because it assumes "happy path" conditions — clean data, predictable inputs, and perfect human execution.
+                  Most automation fails because it assumes "happy path" conditions: clean data, predictable inputs, and perfect human execution.
                 </p>
                 <p>
                   Baseline Digital builds for the messy reality: incomplete forms, inconsistent handoffs, and humans who forget steps. We design for failure states, so your system actually works when it matters.
@@ -502,7 +502,7 @@ const Index = () => {
         </div>
       </section>
 
-      {/* ── PROBLEMS — Timeline ──────────────────────────────────────────── */}
+      {/* ── PROBLEMS: Timeline ──────────────────────────────────────────── */}
       <section className="py-32 relative" style={{ background: "#030609" }}>
         <div className="glow-line absolute top-0 inset-x-0" />
         <div className="container">

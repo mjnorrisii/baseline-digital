@@ -34,7 +34,7 @@ const cases = [
   {
     icon: Plug,
     title: "Custom integrations",
-    desc: "We connect your existing tools — CRMs, payment processors, calendars, communication platforms — into a unified operational system.",
+    desc: "We connect your existing tools (CRMs, payment processors, calendars, communication platforms) into a unified operational system.",
     outcomes: ["Single source of truth", "Eliminated manual data entry", "Cross-platform automation"],
   },
 ];

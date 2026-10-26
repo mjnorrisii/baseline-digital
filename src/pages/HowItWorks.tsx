@@ -11,7 +11,7 @@ const steps = [
     num: "01",
     title: "Capture",
     icon: Target,
-    desc: "Leads from every channel — forms, calls, emails, ads — are captured into a single intake system. Nothing falls through.",
+    desc: "Leads from every channel (forms, calls, emails, ads) are captured into a single intake system. Nothing falls through.",
   },
   {
     num: "02",
