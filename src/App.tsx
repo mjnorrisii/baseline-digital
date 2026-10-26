@@ -13,6 +13,7 @@ import Index from "./pages/Index";
 import HowItWorks from "./pages/HowItWorks";
 import UseCases from "./pages/UseCases";
 import Process from "./pages/Process";
+import Portfolio from "./pages/Portfolio";
 import BookCall from "./pages/BookCall";
 import LogisticsAutomation from "./pages/industries/Logistics";
 import RealEstateOperations from "./pages/industries/RealEstate";
@@ -50,6 +51,7 @@ const TransitionWrapper = () => {
           <Route path="/how-it-works" element={<HowItWorks />} />
           <Route path="/use-cases" element={<UseCases />} />
           <Route path="/process" element={<Process />} />
+          <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/book" element={<BookCall />} />
           <Route path="/logistics-automation" element={<LogisticsAutomation />} />
           <Route path="/real-estate-operations" element={<RealEstateOperations />} />
