@@ -10,6 +10,7 @@ const navItems = [
   { label: "Use Cases", path: "/use-cases" },
   { label: "Industries", path: "/industries" },
   { label: "Process", path: "/process" },
+  { label: "Portfolio", path: "/portfolio" },
 ];
 
 const Navbar = () => {
