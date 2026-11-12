@@ -24,7 +24,7 @@ export default defineConfig(({ mode }) => ({
   build: {
     rollupOptions: {
       input: {
-        main: path.resolve(__dirname, "index.html"),
+        main: path.resolve(__dirname, "classic.html"),
         book: path.resolve(__dirname, "public/book.html"),
         howItWorks: path.resolve(__dirname, "public/how-it-works.html"),
         useCases: path.resolve(__dirname, "public/use-cases.html"),
