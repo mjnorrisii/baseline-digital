@@ -33,6 +33,13 @@ const ScrollToTop = () => {
   return null;
 };
 
+const HardHome = () => {
+  useEffect(() => {
+    window.location.replace("/");
+  }, []);
+  return null;
+};
+
 const queryClient = new QueryClient();
 
 const TransitionWrapper = () => {
@@ -47,7 +54,11 @@ const TransitionWrapper = () => {
         exit="exit"
       >
         <Routes location={location} key={location.pathname}>
-          <Route path="/" element={<Index />} />
+          {/* "/" is served by the static homepage in public/index.html. Client side
+              navigation to "/" hard reloads so visitors get that page. The previous
+              React homepage is kept at /classic as a backup. */}
+          <Route path="/" element={<HardHome />} />
+          <Route path="/classic" element={<Index />} />
           <Route path="/how-it-works" element={<HowItWorks />} />
           <Route path="/use-cases" element={<UseCases />} />
           <Route path="/process" element={<Process />} />
