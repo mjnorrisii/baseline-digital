@@ -184,14 +184,16 @@ body { padding-bottom: 0; }
 /* Portrait screens: the hero is laid out from the top in viewport width units,
    so a tall screen never opens a gap between the tape and the headline. */
 @media (orientation: portrait) {
-  .hero__num { top: 15vw; }
-  .hero__stamp { top: 21vw; }
-  .hero__tape { top: 43vw; }
-  .hero__copy { margin-top: 62vw; }
+  /* Spare height on a tall screen is split above and below the composition. */
+  .hero { --shift: max(0px, (100svh - 178vw) / 2); }
+  .hero__num { top: calc(15vw + var(--shift) * .5); }
+  .hero__stamp { top: calc(21vw + var(--shift)); }
+  .hero__tape { top: calc(43vw + var(--shift)); }
+  .hero__copy { margin-top: calc(62vw + var(--shift)); }
 }
 /* Wide portrait: tablets, and phones showing the desktop version of the site.
    Type is sized up so it reads like the phone layout. */
-@media (orientation: portrait) and (min-width: 761px) {
+@media (orientation: portrait) and (min-width: 761px) and (min-aspect-ratio: 5/8) {
   html { font-size: 150%; }
   .hero__num { top: 6vw; }
   .hero__stamp { top: 9vw; }
@@ -213,6 +215,29 @@ body { padding-bottom: 0; }
   .sms__grid, .price__cols, .who__grid { grid-template-columns: minmax(0, 1fr); align-items: start; }
   .who figure { max-width: 18rem; }
   .rail__tick span { display: none; }
+}
+/* A phone showing the desktop version of the site: wide layout viewport, tall
+   screen. Scale the root so the page is the phone layout, and apply the phone
+   rules. */
+@media (orientation: portrait) and (min-width: 761px) and (max-aspect-ratio: 5/8) {
+  html { font-size: 3.883vw; }
+  :root { --rail-h: 4rem; }
+  .sms__grid, .price__cols, .who__grid { grid-template-columns: minmax(0, 1fr); align-items: start; }
+  .hero__num { top: 9svh; right: -4vw; font-size: 26vw; }
+  .hero__stamp { top: 20svh; right: 1rem; }
+  .hero__tape { top: 30svh; }
+  .hero h1 { font-size: clamp(1.9rem, 8.6vw, 3rem); }
+  .steps li { grid-template-columns: 2.6rem minmax(0, 1fr); }
+  .steps b { font-size: 2.6rem; }
+  .yes__word b { font-size: 23vw; }
+  .rail { grid-template-columns: minmax(0, 1fr) auto; gap: .6rem; border-top-color: transparent; }
+  .rail__track { position: absolute; left: 0; right: 0; top: -3px; height: 6px; }
+  .rail__line, .rail__fill { top: 0; margin-top: 0; height: 6px; }
+  .rail__line { background: #3A4753; }
+  .rail__tick { display: none; }
+  .rail__cta { padding: .75rem .8rem; }
+  .who figure { max-width: 16rem; }
+  .foot { font-size: var(--sc-t-xs); }
 }
 @media (prefers-reduced-motion: reduce) {
   .yes__flood { --k: 1; }
