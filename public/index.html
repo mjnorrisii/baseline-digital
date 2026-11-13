@@ -181,6 +181,39 @@ body { padding-bottom: 0; }
   .who figure { max-width: 16rem; }
   .foot { font-size: var(--sc-t-xs); }
 }
+/* Portrait screens: the hero is laid out from the top in viewport width units,
+   so a tall screen never opens a gap between the tape and the headline. */
+@media (orientation: portrait) {
+  .hero__num { top: 15vw; }
+  .hero__stamp { top: 21vw; }
+  .hero__tape { top: 43vw; }
+  .hero__copy { margin-top: 62vw; }
+}
+/* Wide portrait: tablets, and phones showing the desktop version of the site.
+   Type is sized up so it reads like the phone layout. */
+@media (orientation: portrait) and (min-width: 761px) {
+  html { font-size: 150%; }
+  .hero__num { top: 6vw; }
+  .hero__stamp { top: 9vw; }
+  .hero__tape { top: 24vw; }
+  .hero__copy { margin-top: 33vw; max-width: none; }
+  .hero h1 { font-size: 7.6vw; }
+  .hero__lede { max-width: 30ch; }
+  .wait__line { font-size: 6.6vw; }
+  .wait__line--sm { font-size: 4.9vw; }
+  .sms__day { font-size: 12vw; }
+  .sms__msg p { font-size: 3.4vw; }
+  .yes__pre { font-size: 5.6vw; }
+  .yes__word b { font-size: 22vw; }
+  .yes__meta .amt { font-size: 5vw; }
+  .how h2 { font-size: 5.6vw; }
+  .price__big { font-size: 12vw; }
+  .who h2 { font-size: 5.4vw; }
+  .end h2 { font-size: 6.2vw; }
+  .sms__grid, .price__cols, .who__grid { grid-template-columns: minmax(0, 1fr); align-items: start; }
+  .who figure { max-width: 18rem; }
+  .rail__tick span { display: none; }
+}
 @media (prefers-reduced-motion: reduce) {
   .yes__flood { --k: 1; }
   .yes__word { --k2: 1; }
