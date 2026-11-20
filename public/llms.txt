@@ -26,7 +26,16 @@ Pilot (12,000 DKK, 4 weeks, fixed price, excl. VAT, no lock in) includes:
 - Friendly reminders on overdue invoices
 - Friday report with results in kroner
 
-## Pages
+## Danish pages
+
+- [Sådan virker det (how it works)](https://www.baselinedigital.dk/saadan-virker-det): The follow up sequence for one quote from day 0 to reply, invoice reminders, what the firm controls, and how data is handled.
+- [Proces](https://www.baselinedigital.dk/proces): Four steps from a free 30 minute review to setup, a 4 week pilot and the decision to continue.
+- [El](https://www.baselinedigital.dk/el): The quote and invoice follow up offer for Danish electrical firms.
+- [VVS](https://www.baselinedigital.dk/vvs): The quote and invoice follow up offer for Danish plumbing and heating firms.
+- [Erfaring](https://www.baselinedigital.dk/erfaring): Systems Michael Norris has built in operations at a logistics terminal in Ishøj.
+- [Book en gennemgang](https://www.baselinedigital.dk/book-en-gennemgang): Book a free 30 minute review in Danish.
+
+## English pages
 
 - [Homepage (Danish)](https://www.baselinedigital.dk/): The quote follow up offer for Danish electrical and plumbing firms, told as one quote followed over six days, with the process, pilot price and founder introduction.
 - [Book a call](https://www.baselinedigital.dk/book): Free 30 minute review of the current tool stack, the manual bottlenecks costing the most time, a proposed workflow design, and pricing.

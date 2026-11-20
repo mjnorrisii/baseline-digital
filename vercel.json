@@ -1,5 +1,11 @@
 {
   "rewrites": [
+    { "source": "/saadan-virker-det", "destination": "/saadan-virker-det.html" },
+    { "source": "/proces", "destination": "/proces.html" },
+    { "source": "/book-en-gennemgang", "destination": "/book-en-gennemgang.html" },
+    { "source": "/erfaring", "destination": "/erfaring.html" },
+    { "source": "/el", "destination": "/el.html" },
+    { "source": "/vvs", "destination": "/vvs.html" },
     {
       "source": "/(.*)",
       "destination": "/classic.html"
