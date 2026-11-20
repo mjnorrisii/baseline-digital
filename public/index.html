@@ -145,6 +145,9 @@ body { padding-bottom: 0; }
 .end__tel { font-family: var(--sc-font-display); font-weight: 800; font-size: var(--sc-t-xl); letter-spacing: -0.02em; text-decoration-thickness: 3px; text-underline-offset: .18em; }
 .foot { padding: var(--sc-4) var(--sc-gutter) calc(var(--rail-h) + var(--sc-4)); border-top: 2px solid var(--rule); display: flex; flex-wrap: wrap; justify-content: space-between; gap: .25rem 2rem; font-size: var(--sc-t-sm); font-weight: 500; }
 
+.foot__nav { flex-basis: 100%; display: flex; flex-wrap: wrap; gap: .25rem 1.25rem; }
+.foot__nav a { text-decoration: none; }
+.foot__nav a:hover { text-decoration: underline; }
 /* ---------- signature move: the day rail ---------- */
 .rail { position: fixed; z-index: var(--sc-z-chrome); left: 0; right: 0; bottom: 0; height: var(--rail-h); background: var(--night); color: #F3F4F1; display: grid; grid-template-columns: auto minmax(0, 1fr) auto; align-items: center; gap: clamp(.75rem, 2.5vw, 2.5rem); padding: 0 clamp(.75rem, 2.5vw, 2rem); border-top: 3px solid var(--sun); transition: background-color 320ms var(--sc-ease-out), color 320ms var(--sc-ease-out); padding-bottom: env(safe-area-inset-bottom, 0); box-sizing: content-box; }
 .rail__id { font-weight: 700; font-size: var(--sc-t-sm); line-height: 1.15; white-space: nowrap; }
@@ -387,6 +390,7 @@ body { padding-bottom: 0; }
         <span>Baseline Digital · København</span>
         <span>CVR 37849154</span>
         <a href="mailto:michael@baselinedigital.dk">michael@baselinedigital.dk</a>
+        <nav class="foot__nav" aria-label="Sider"><a href="/saadan-virker-det">Sådan virker det</a><a href="/proces">Proces</a><a href="/el">El</a><a href="/vvs">VVS</a><a href="/erfaring">Erfaring</a><a href="/how-it-works" hreflang="en" lang="en">English</a></nav>
       </footer>
     </div>
   </section>

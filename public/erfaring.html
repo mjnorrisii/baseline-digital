@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="da">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#16283A">
+<meta name="color-scheme" content="dark">
+<title>Erfaring · Baseline Digital</title>
+<meta name="description" content="Systemer Michael Norris har bygget i driften på en logistikterminal i Ishøj: sporing, rapporter, sagstid, ruteoptimering og AI agenter.">
+<link rel="canonical" href="https://www.baselinedigital.dk/erfaring">
+<link rel="alternate" hreflang="da" href="https://www.baselinedigital.dk/erfaring">
+<link rel="alternate" hreflang="en" href="https://www.baselinedigital.dk/portfolio">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%230E1B26'/><rect y='24' width='32' height='8' fill='%23F5B92E'/></svg>">
+<meta property="og:title" content="Erfaring · Baseline Digital">
+<meta property="og:description" content="Systemer Michael Norris har bygget i driften på en logistikterminal i Ishøj: sporing, rapporter, sagstid, ruteoptimering og AI agenter.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="da_DK">
+<meta property="og:url" content="https://www.baselinedigital.dk/erfaring">
+<meta property="og:image" content="https://www.baselinedigital.dk/og-image.png">
+<link rel="preload" href="/seksdage/bricolage.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/seksdage/figtree.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/seksdage/scrollcraft.css">
+<link rel="stylesheet" href="/seksdage/sider.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Baseline Digital", "item": "https://www.baselinedigital.dk/"}, {"@type": "ListItem", "position": 2, "name": "Erfaring", "item": "https://www.baselinedigital.dk/erfaring"}]}</script>
+</head>
+<body>
+<a class="skip" href="#indhold">Spring til indhold</a>
+<header class="top on-paper">
+  <a class="mark" href="/"><i aria-hidden="true"></i>Baseline Digital</a>
+  <nav aria-label="Hovedmenu"><a href="/saadan-virker-det">Sådan virker det</a><a href="/proces">Proces</a><a href="/el">El</a><a href="/vvs">VVS</a><a href="/erfaring" aria-current="page">Erfaring</a></nav>
+  <a class="btn" href="/book-en-gennemgang">Book en gennemgang</a>
+</header>
+<main id="indhold">
+<section class="phero on-paper">
+  <div class="phero__ghost" aria-hidden="true" data-sc-parallax="-1.6">DRIFT</div>
+  <div class="sc-wrap">
+    <h1 class="sc-display" data-sc-in>Bygget i en travl drift.</h1>
+    <p class="phero__lede" data-sc-in>Til daglig står Michael for driften på en logistikterminal i Ishøj. Her er nogle af de systemer, han har bygget der. Samme metode bruges hos jer: test først, gå live bagefter, og mål resultatet.</p>
+    <div class="phero__row" data-sc-in><a class="btn" href="/book-en-gennemgang">Book en gratis gennemgang</a></div>
+  </div>
+  <div class="phero__tape" aria-hidden="true">BYGGET I DRIFT · BYGGET I DRIFT · BYGGET I DRIFT · BYGGET I DRIFT · BYGGET I DRIFT · BYGGET I DRIFT · BYGGET I DRIFT · BYGGET I DRIFT · BYGGET I DRIFT · BYGGET I DRIFT · BYGGET I DRIFT · BYGGET I DRIFT</div>
+</section>
+<section class="sec on-night">
+  <div class="sc-wrap">
+    <h2 class="sc-display" data-sc-in>Seks systemer fra hverdagen.</h2>
+    <div style="margin-top:clamp(2.5rem,6vw,4.5rem)"><article class="case" data-sc-in>
+      <h3>Sporing af håndscannere</h3>
+      <div><dl><dt>Problemet</dt><dd>Håndscannere gik fra hånd til hånd mellem chauffører og terminalpersonale, uden et pålideligt overblik over, hvem der havde hvilken enhed.</dd><dt>Løsningen</dt><dd>Et system, der læser overdragelser i en Teams kanal, tolker dem med AI og kontrollerer chaufføren. Hver overdragelse bliver logget, og der kommer en alarm, når en scanner ikke er afleveret til tiden. Systemet er beskyttet mod dubletter og uautoriserede kald og blev testet i en lukket kanal, før det gik live.</dd></dl>
+      <ul class="tags" aria-label="Værktøjer"><li>Power Automate</li><li>Microsoft Teams</li><li>SharePoint</li><li>Excel Online</li><li>n8n</li><li>Claude API</li></ul></div>
+    </article><article class="case" data-sc-in>
+      <h3>Overblik over åbne forsendelser</h3>
+      <div><dl><dt>Problemet</dt><dd>Fejl i åbne forsendelser blev opdaget sent, fordi status lå gemt i rå eksportfiler.</dd><dt>Løsningen</dt><dd>Et workflow, der kun læser data. Det sorterer lukkede forsendelser fra, markerer forsendelser med forældet eller manglende status og sender et farvekodet overblik på mail.</dd></dl>
+      <ul class="tags" aria-label="Værktøjer"><li>Dataeksport</li><li>Forretningsregler</li><li>Mail med overblik</li></ul></div>
+    </article><article class="case" data-sc-in>
+      <h3>Måling af sagstid</h3>
+      <div><dl><dt>Problemet</dt><dd>Hændelsessager havde ingen ensartet måling af, hvor længe de stod åbne.</dd><dt>Løsningen</dt><dd>Et dashboard og et flow, der måler hver sag fra åben til lukket, også når en sag bliver genåbnet. Historikken gemmes for sig, så kilderapporten aldrig bliver ændret. Alt blev bygget og testet på en kopi, før det gik live.</dd></dl>
+      <ul class="tags" aria-label="Værktøjer"><li>Power Automate</li><li>SharePoint</li><li>Excel Online</li></ul></div>
+    </article><article class="case" data-sc-in>
+      <h3>Ruteoptimering med Danmarks adresseregister</h3>
+      <div><dl><dt>Problemet</dt><dd>Nogle ruter havde for lidt kapacitet og brug for en bedre fordeling af stop.</dd><dt>Løsningen</dt><dd>En proces, der bruger DAWA, Danmarks adresse API, til at fordele stop. Den er brugt på en række pressede ruter og har dækket flere hundrede pakker.</dd></dl>
+      <ul class="tags" aria-label="Værktøjer"><li>DAWA</li><li>API integration</li><li>Ruteplanlægning</li></ul></div>
+    </article><article class="case" data-sc-in>
+      <h3>Optælling af stop pr. rute</h3>
+      <div><dl><dt>Problemet</dt><dd>Antallet af stop pr. rute pr. nat stemte ikke overens mellem rapporterne.</dd><dt>Løsningen</dt><dd>Et fast workflow, der gør eksportdata til unikke stop pr. rute. Reglerne er dokumenteret, aftalt med kolleger og afstemt mod tallene i Power BI.</dd></dl>
+      <ul class="tags" aria-label="Værktøjer"><li>Dataeksport</li><li>Power BI</li><li>Afstemning</li></ul></div>
+    </article><article class="case" data-sc-in>
+      <h3>Daglig automatisering og AI agent</h3>
+      <div><dl><dt>Problemet</dt><dd>Opdatering af rutelister og faste administrative opgaver blev lavet i hånden hver dag.</dd><dt>Løsningen</dt><dd>En daglig filgenerator holder rutelisterne opdaterede, og faste svar i Outlook kører af sig selv. Derudover en driftsagent i Copilot Studio med adgang til SharePoint, Teams og mail.</dd></dl>
+      <ul class="tags" aria-label="Værktøjer"><li>Power Automate</li><li>Outlook</li><li>Copilot Studio</li><li>SharePoint</li><li>Microsoft Teams</li></ul></div>
+    </article></div>
+  </div>
+</section>
+<section class="sec on-paper">
+  <div class="sc-wrap">
+    <h2 class="sc-display" data-sc-in>Hvad betyder det for jer?</h2>
+    <p class="sec__intro" data-sc-in>Opfølgning på tilbud kræver det samme som en terminal: data, man kan stole på, faste regler, og besked med det samme, når noget fejler. Det er den måde, vi bygger på.</p>
+  </div>
+</section>
+<section class="sec who on-night">
+  <div class="sc-wrap who__grid">
+    <div data-sc-in><figure><img src="/seksdage/michael.webp" width="1024" height="1024" alt="Michael Norris, stifter af Baseline Digital" loading="lazy"></figure></div>
+    <div data-sc-in>
+      <h2 class="sc-display">Du taler med ham, der bygger det.</h2>
+      <p>Jeg hedder Michael Norris. Til daglig står jeg for driften på en logistikterminal i Ishøj, og jeg har selv drevet firma med 12 til 15 chauffører. Jeg ved, hvordan en dag ser ud, når telefonen ringer, og papirarbejdet må vente.</p>
+      <p class="sara">Er du blevet ringet op af Sara? Hun er vores digitale assistent og ringer fra <strong>+45 93 70 90 39</strong>. Hun booker kun tiden. Samtalen tager du med mig.</p>
+    </div>
+  </div>
+</section>
+<section class="end on-paper">
+  <div class="sc-wrap">
+    <h2 class="sc-display" data-sc-in>Hvor mange tilbud ligger og venter hos jer lige nu?</h2>
+    <div class="end__row" data-sc-in>
+      <a class="btn" href="/book-en-gennemgang">Book en gratis gennemgang</a>
+      <a class="tel" href="tel:+4593709039">+45 93 70 90 39</a>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="foot">
+  <nav aria-label="Sider"><a href="/">Forside</a><a href="/saadan-virker-det">Sådan virker det</a><a href="/proces">Proces</a><a href="/el">El</a><a href="/vvs">VVS</a><a href="/erfaring">Erfaring</a><a href="/book-en-gennemgang">Book en gennemgang</a><a href="/portfolio" hreflang="en" lang="en">English</a></nav>
+  <div class="foot__info">
+    <span>Baseline Digital · København</span>
+    <span>CVR 37849154</span>
+    <a href="mailto:michael@baselinedigital.dk">michael@baselinedigital.dk</a>
+  </div>
+</footer>
+<script src="/seksdage/scrollcraft.js"></script>
+<script>ScrollCraft.mount(document.body);</script>
+<script defer src="/_vercel/insights/script.js"></script>
+</body>
+</html>

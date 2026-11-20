@@ -1,0 +1,60 @@
+# Baseline Digital
+
+> Baseline Digital is a Copenhagen based automation studio founded by Michael Norris. Its main offer automatically follows up on open quotes (tilbud) and overdue invoices for Danish electrical and plumbing firms (el og VVS) with 5 to 30 employees. The offer starts as a 4 week pilot at a fixed price of 12,000 DKK excluding VAT, with no lock in. Baseline Digital also builds lead intake, booking and follow up automations for established local service businesses such as HVAC, plumbing, roofing, dental clinics, med spas, real estate and logistics.
+
+Key facts:
+
+- Company: Baseline Digital, Copenhagen, Denmark. CVR 37849154.
+- Founder: Michael Norris. He runs daily operations at a logistics terminal in Ishøj and has previously run a company with 12 to 15 drivers. Prospects speak directly with him, the person who builds the system.
+- Homepage language: Danish. Industry and service pages: English.
+- Contact: michael@baselinedigital.dk, phone +45 93 70 90 39.
+- Booking: a free 30 minute review call at https://cal.com/mjnorrisii/30min
+- Sara is Baseline Digital's digital assistant. She calls from +45 93 70 90 39 only to book a meeting time. The conversation itself is with Michael.
+
+## Main offer: automatic quote and invoice follow up (Denmark)
+
+How it works:
+
+1. Baseline Digital connects to the firm's existing order system (for example Ordrestyring or Minuba) or accounting software. It reads open quotes and overdue invoices and does not change the firm's data. The firm does not switch systems.
+2. The customer receives follow ups on day 2, 5 and 10 by SMS and email, sent in the firm's own name. The firm approves all message texts before anything is sent. Follow up stops as soon as the customer replies.
+3. Every Friday the firm receives a report showing won quotes and paid invoices in Danish kroner, so the owner can judge the return directly.
+
+Pilot (12,000 DKK, 4 weeks, fixed price, excl. VAT, no lock in) includes:
+
+- Connection to the firm's order system
+- Follow up on open quotes by SMS and email
+- Friendly reminders on overdue invoices
+- Friday report with results in kroner
+
+## Danish pages
+
+- [Sådan virker det (how it works)](https://www.baselinedigital.dk/saadan-virker-det): The follow up sequence for one quote from day 0 to reply, invoice reminders, what the firm controls, and how data is handled.
+- [Proces](https://www.baselinedigital.dk/proces): Four steps from a free 30 minute review to setup, a 4 week pilot and the decision to continue.
+- [El](https://www.baselinedigital.dk/el): The quote and invoice follow up offer for Danish electrical firms.
+- [VVS](https://www.baselinedigital.dk/vvs): The quote and invoice follow up offer for Danish plumbing and heating firms.
+- [Erfaring](https://www.baselinedigital.dk/erfaring): Systems Michael Norris has built in operations at a logistics terminal in Ishøj.
+- [Book en gennemgang](https://www.baselinedigital.dk/book-en-gennemgang): Book a free 30 minute review in Danish.
+
+## English pages
+
+- [Homepage (Danish)](https://www.baselinedigital.dk/): The quote follow up offer for Danish electrical and plumbing firms, told as one quote followed over six days, with the process, pilot price and founder introduction.
+- [Book a call](https://www.baselinedigital.dk/book): Free 30 minute review of the current tool stack, the manual bottlenecks costing the most time, a proposed workflow design, and pricing.
+- [How it works](https://www.baselinedigital.dk/how-it-works): The general system: lead capture from every channel, qualification, structured follow up sequences, payment triggered workflows, tracked service delivery and monitoring.
+- [Process](https://www.baselinedigital.dk/process): Engagement stages: map current operations, design the system, build and deploy in tested stages, then monitor with dashboards and alerts.
+- [Portfolio](https://www.baselinedigital.dk/portfolio): Operations automation case studies Michael Norris built in a logistics terminal environment, including device custody tracking via Microsoft Teams and AI, shipment exception reports, incident case timing, route optimization with the Danish address API (DAWA) and a Copilot Studio operations agent.
+
+## Industries
+
+- [All industries](https://www.baselinedigital.dk/industries): Overview of the service verticals Baseline Digital builds for.
+- [HVAC](https://www.baselinedigital.dk/hvac): Capturing missed calls, booking emergency jobs, dispatching technicians and speeding up invoicing.
+- [Plumbing](https://www.baselinedigital.dk/plumbing): Turning one time emergency jobs into repeat customers with maintenance reminders, post job follow up and rebooking.
+- [Roofing](https://www.baselinedigital.dk/roofing): Estimate follow up sequences, handling storm driven lead spikes, and attaching job photos to the customer record.
+- [Dental clinics](https://www.baselinedigital.dk/dental-clinics): Filling cancellations from a waitlist, reactivating lapsed recall patients, and insurance verification.
+- [Med spas](https://www.baselinedigital.dk/med-spas): Fast inquiry response, qualification and booking, treatment reminders to reduce no shows, and review requests.
+- [Real estate](https://www.baselinedigital.dk/real-estate-operations): Instant lead response and qualification, and nurturing idle CRM leads.
+- [Transport and logistics](https://www.baselinedigital.dk/logistics-automation): Removing duplicate data entry across carrier portals, automated status updates and smoother dispatch handoffs.
+
+## Optional
+
+- [LinkedIn: Michael Norris](https://www.linkedin.com/in/mjnorrisii): Founder profile.
+- [Sitemap](https://www.baselinedigital.dk/sitemap.xml): Full list of indexed pages.

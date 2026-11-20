@@ -24,6 +24,7 @@ import Plumbing from "./pages/industries/Plumbing";
 import Dental from "./pages/industries/Dental";
 import Roofing from "./pages/industries/Roofing";
 import NotFound from "./pages/NotFound";
+import HreflangLinks from "./components/HreflangLinks";
 
 const ScrollToTop = () => {
   const { pathname } = useLocation();
@@ -87,6 +88,7 @@ const App = () => (
       <BrowserRouter>
         {/* Removed: <div className="noise-overlay" />: fixed full-viewport SVG noise was a major compositing/paint cost on scroll */}
         <ScrollToTop />
+        <HreflangLinks />
         <Navbar />
         <main>
           <TransitionWrapper />
